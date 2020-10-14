@@ -4,17 +4,16 @@
     background-color: #303956;
 }
 
-a, h5, h6, .svg {
-    margin: 0 !important;
+.menu__item, h5, h6, .svg {
+    margin: 0;
     color: #48526B !important;
     transition: all .2s linear;
     fill: #48526B !important;
 }
 
-a:hover, .hov:hover .svg {
+.menu__item:hover, .hov:hover .svg {
     color: #fff !important;
     fill: #fff !important;
-    text-decoration: none;
 }
 
 .search {

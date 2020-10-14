@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import st from './registration.module.css';
+import {Link} from 'react-router-dom';
 
 
 const Registration = () => {
@@ -12,20 +12,16 @@ const Registration = () => {
 
 
   const handleSubmit = async (e) =>  {
-    let formData  = new FormData();
+    let formData  = new FormData(document.forms[0]);
 
-    formData.append("username", username);
-    formData.append("phoneNumber", phoneNumber);
-    formData.append("password", password)
-
-    // let dataToJson = {};
-    // formData.forEach((value, name) => {
-    //   dataToJson[name] = value;
-    // });
+    let dataToJson = {};
+    formData.forEach((value, name) => {
+      dataToJson[name] = value;
+    });
 
     let response = await fetch("", {
       method: "post",
-      body: formData
+      body: JSON.stringify(dataToJson)
     });
 
     if(!response.ok){
@@ -37,53 +33,61 @@ const Registration = () => {
   }
 
   return(
-    <div className={st.regWrapper}>
-      <h1>Ro'yxatdan o'tish</h1>
-      <div className={st.regForm}>
-        <form onSubmit={handleSubmit}>
+    <div className="regWrapper">
+      <h1 className="formHeader">Ro'yxatdan o'tish</h1>
+      <div className="regForm">
+        <form onSubmit={handleSubmit} className="form">
           <label htmlFor="username">F.I.SH</label>
-          <div className={st.inputs}>
+          <div className="inputs">
+            <span className="inputIcon"></span>
             <input 
                 id="username"
                 type="text" 
                 name="username"
                 onChange={e => setUsername(e.target.value)}
-                value={username} />
+                value={username}
+                placeholder="To'liq kiriting" />
           </div>
           <label htmlFor="">Telefon</label>
-          <div className={st.inputs}>
+          <div className="inputs">
+          <span className="inputIcon"></span>
             <input
                 id="phoneNumber"
                 type="text"
                 name="phoneNumber"
                 onChange={e => setPhoneNumber(e.target.value)}
-                value={phoneNumber} />
+                value={phoneNumber}
+                placeholder="+998" />
           </div>
           <label htmlFor="password">Parol</label>
-          <div className={st.inputs}>
+          <div className="inputs">
+          <span className="inputIcon"></span>
             <input 
                 id="password"
                 type="password"
                 name="password"
                 onChange={e => setPassword(e.target.value)}
-                value={password} />
+                value={password}
+                placeholder="******************" />
           </div>
           <label htmlFor="confirmPassword">Parolni tasdiqlash</label>
-          <div className={st.inputs}>
+          <div className="inputs">
+          <span className="inputIcon"></span>
             <input 
                 id="confirmPassword"
                 type="password"
                 name="confirmPassword"
                 onChange={e => setConfirmPassword(e.target.value)}
-                value={confirmPassword} />
+                value={confirmPassword}
+                placeholder="******************" />
           </div>
-          <button type="submit" className={st.subBtn}>ro'yxatdan o'tish</button>
+          <button type="submit" className="subBtn">ro'yxatdan o'tish</button>
         </form>
       </div>
-      <span className={st.refToLogin}>
-        Menda akkount bor! 
-        <a href="#" >Kirish</a>
-      </span>
+      <p className="formFooter">
+        Menda akkount bor!&nbsp;
+        <Link to="/login">Kirish</Link>
+      </p>
     </div>
   );
 
