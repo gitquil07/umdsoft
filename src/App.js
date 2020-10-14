@@ -1,19 +1,26 @@
 import React from 'react';
-import {Switch, Route} from "react-router-dom";
-import logo from './logo.svg';
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import './App.css';
-import './component/menu/menu'
+
+import Menu from './component/menu/menu'
+import { Registration } from './pages/index';
+// import Registration from './pages/registration/registration';
 
 function App() {
   return (
+
     <div>
-      <switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/onlineRep" component={onlineRep} />
-        <Route exact path="/onlineSchool" component={onlineSchool} />
-        <Route exact path="/studentDashboard" component={studentDashboard} />
-        <Route exact path="/registration" component={registration} />
-      </switch>
+      <Menu />
+
+      <Router>
+        <Switch>
+          {/* <Route exact path="/" component={Home} />
+          <Route exact path="/onlineRep" component={onlineRep} />
+          <Route exact path="/onlineSchool" component={onlineSchool} />
+          <Route exact path="/studentDashboard" component={studentDashboard} /> */}
+          <Route exact path="/registration" component={Registration} />
+        </Switch>
+      </Router>
     </div>
   );
 }

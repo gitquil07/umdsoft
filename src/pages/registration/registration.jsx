@@ -16,21 +16,21 @@ const Registration = () => {
 
     formData.append("username", username);
     formData.append("phoneNumber", phoneNumber);
-    formData.append("password", password);
+    formData.append("password", password)
 
-    let dataToJson = {};
-    formData.forEach((value, name) => {
-      dataToJson[name] = value;
-    });
+    // let dataToJson = {};
+    // formData.forEach((value, name) => {
+    //   dataToJson[name] = value;
+    // });
 
     let response = await fetch("", {
       method: "post",
-      body: JSON.stringify(dataToJson)
+      body: formData
     });
 
     if(!response.ok){
       let error = response.json();
-      errorReg = error.message;
+      setErrorReg(error.message);
     }
 
     e.preventDefault();
