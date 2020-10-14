@@ -1,5 +1,15 @@
 a {
   text-decoration: none !important;
+  transition: all .2s linear;
+}
+
+p {
+  font-size: 12px;
+  line-height: 1.8em;
+}
+
+.container {
+  max-width: 850px !important;
 }
 
 .regWrapper{
