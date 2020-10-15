@@ -3,13 +3,49 @@ a {
   transition: all .2s linear;
 }
 
-p {
-  font-size: 12px;
-  line-height: 1.8em;
+.bg__blue {
+  background-color: #4f56f5;
+}
+
+.col__light__blue {
+  color: #4f56f5;
+}
+
+.col__blue {
+  color: #303956;
+}
+
+.col__green {
+  color: #07C400
+}
+
+.bg__green {
+  background-color: #07C400;
+}
+
+.col__gold {
+  color: #FF8800;
+}
+
+.bg__gold {
+  background-color: #FF8800;
+}
+
+.col__56 {
+  color: #565656 !important;
+}
+
+.col__48 {
+  color: #48526b !important;
+}
+
+.bg__48 {
+  background-color: #48526b !important;
 }
 
 .container {
-  max-width: 850px !important;
+  max-width: 1000px !important;
+  padding: 0 !important;
 }
 
 .regWrapper{

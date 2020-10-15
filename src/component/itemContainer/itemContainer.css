@@ -1,25 +1,24 @@
 .container-head{
   font-size:20px;
+  height:30px;
   margin:23px 0;
-  position:relative;
+  display:flex;
+  align-items:center;
   color:#303956;
-}
+  position:relative;
 
-.container-head:after{
-  content:"";
-  height:1px;
-  width:100%;
-  display:block;
-  background-color:#dedede;
-  position:absolute;
-  top:calc(50% - .5px);
-  z-index:-10;
 }
 
 .container-title{
-  background-color:#f5f7fa;
   display:inline-block;
   padding-right:12px;
   text-transform:uppercase;
+  position:absolute;
 }
 
+.line{
+  width:100%;
+  height:1px;
+  display:block;
+  background-color:#dedede;
+}
