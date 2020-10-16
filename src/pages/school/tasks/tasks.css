@@ -1,0 +1,121 @@
+.tasks {
+    padding: 10px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 40px #e6e6e6;
+    transition: transform .15s linear;
+}
+
+.tasks:hover {
+    transform: scale(1.03);
+}
+
+.task-item__link {
+    text-decoration: none;
+}
+
+.task-item__img {
+    width: 196px;
+    height: 100%;
+    margin-right: 24px;
+    border-radius: 7px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+}
+
+.task-item {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    width: 50%;
+    margin-right: 20px;
+}
+
+.task-item__link, .task-item__title {
+    margin: 0 0 8px;
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.task-item__link:hover, .task-item__title:hover {
+    color: #000;
+}
+
+.task-item__tags {
+    display: flex;
+    margin: auto 0 12px;
+}
+
+.task-item__tag-container {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    text-align: center;
+    color: #999;
+}
+
+.task-item__tag-icon {
+    margin-right: 8px;
+}
+
+.task-item__details {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.taks-item__details-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.task-card__date-label {
+    text-align: right;
+    font-size: 14px;
+    line-height: 20px;
+    color: #999;
+}
+
+.task-card__date {
+    margin-top: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.task__item-details-button{
+    padding: 5px 0;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #4f56f5;
+    background-color:  #f1f3f4;
+    border-radius: 4px;
+}
+
+.task__item-details-button:hover {
+    color: #f1f3f4;
+    background-color:  #4f56f5;
+}
+
+.more-item__link {
+    padding: 7px 60px;
+    border-radius: 5px;
+    color: #4f56f5;
+    background-color: #f1f3f4;
+    transition: all .2s linear;
+}
+
+.more-item__link:hover {
+    background-color: #4f56f5;
+    color: #f1f3f4;
+}

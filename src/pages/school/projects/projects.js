@@ -9,7 +9,7 @@ import python from '../../../img/python.svg'
 class Projects extends React.Component {
     render() {
         return(
-            <div className='d-flex justify-content-between'>
+            <div className='d-flex flex-wrap justify-content-between'>
 
                 <div className='projects__item border my-4'>
                     <div className='d-flex justify-content-between h-50 bg__blue' style={{borderTopLeftRadius: '5px', borderTopRightRadius: '5px'}}>
@@ -20,7 +20,7 @@ class Projects extends React.Component {
                     </div>
                     <div className='h-50 px-2'>
                         <div className='pt-2 pb-3 border-bottom'>
-                            <div className='d-flex'>
+                            <div className='d-flex justify-content-between'>
                                 <h5 className='mb-1 col__56 font-weight-bold'>SUCCESS DARSLARI</h5>
                                 <i role='button' className="heart__icon fas fa-heart col__green"></i>
                             </div>
@@ -56,7 +56,7 @@ class Projects extends React.Component {
                     </div>
                     <div className='h-50 px-2'>
                         <div className='pt-2 pb-3 border-bottom'>
-                            <div className='d-flex'>
+                            <div className='d-flex justify-content-between'>
                                 <h5 className='mb-1 col__56 font-weight-bold'>MOBILE DARSLARI</h5>
                                 <i role='button' className="heart__icon fas fa-heart col__green"></i>
                             </div>
@@ -92,7 +92,7 @@ class Projects extends React.Component {
                     </div>
                     <div className='h-50 px-2'>
                         <div className='pt-2 pb-3 border-bottom'>
-                            <div className='d-flex'>
+                            <div className='d-flex justify-content-between'>
                                 <h5 className='mb-1 col__56 font-weight-bold'>DESCTOP DARSLARI</h5>
                                 <i role='button' className="heart__icon fas fa-heart col__green"></i>
                             </div>
@@ -128,7 +128,7 @@ class Projects extends React.Component {
                     </div>
                     <div className='h-50 px-2'>
                         <div className='pt-2 pb-3 border-bottom'>
-                            <div className='d-flex'>
+                            <div className='d-flex justify-content-between'>
                                 <h5 className='mb-1 col__56 font-weight-bold'>PYTHON DARSLARI</h5>
                                 <i role='button' className="heart__icon fas fa-heart col__green"></i>
                             </div>

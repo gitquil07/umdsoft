@@ -5,6 +5,7 @@ import Projects from './projects/projects'
 import OnlineSeminar from './onlineSeminar/onlineSeminar'
 
 import './index.css'
+import Tasks from './tasks/tasks'
 
 
 class OnlineSchool extends React.Component {
@@ -24,7 +25,7 @@ class OnlineSchool extends React.Component {
                                 <OnlineSeminar />
                             </Tab>
                             <Tab eventKey="tasks" title="MASHG'ULOTLAR">
-                                <Projects />
+                                <Tasks />
                             </Tab>
                         </Tabs>
                     </div>

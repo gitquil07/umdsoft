@@ -15,7 +15,7 @@ class Banner extends React.Component {
         return (
             <div className='w-100'> {/* Banner */}
                 <div className='lecture'>
-                    <div className='container'>
+                    <div className='container' id='container'>
                         <h1 className='lecture__h1 text-white'>{title}</h1>
                         <p className='lecture__p text-white'>{text}</p>
                         <a href='#' className='wh__btn'>BATAFSIL</a>

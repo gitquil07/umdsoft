@@ -27,6 +27,7 @@ class Menu extends React.Component {
         let header = document.querySelector("#header");
         let footer = document.querySelector('#footer');
         let after__header = document.querySelector('#after__header');
+        let tasks = document.querySelectorAll('.tasks');
         menu.style.display = this.state.isOpen? "block" : "none";
         if(this.state.isOpen){
             main.style.width = '83%';
@@ -34,6 +35,9 @@ class Menu extends React.Component {
             header.style.width='83%'
             footer.style.marginLeft = '17%'
             after__header.style.marginLeft = '17%'
+            for(let i=0; i<tasks.length; i++){
+                tasks[i].style.width = '90%'
+            }
             menu.classList.remove("animate__fadeOutLeftBig")
             menu.classList.add("animate__fadeInLeftBig");
         }else{
@@ -42,6 +46,9 @@ class Menu extends React.Component {
             header.style.width='100%'
             footer.style.marginLeft = '0%'
             after__header.style.marginLeft = '0%'
+            for(let i=0; i<tasks.length; i++){
+                tasks[i].style.width = '48%'
+            }
             menu.classList.remove("animate__fadeInLeftBig")
             menu.classList.add("animate__fadeOutLeftBig");
         }

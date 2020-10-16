@@ -11,7 +11,7 @@ class Home extends React.Component {
         return (
             <div id='after__header' className='after__header bg-light'> 
                 <Banner title="Dasturlashni qulay muhitda o'rganing" text="Dasturlash sohasida eng rivojlangan va talabi yuqori bo'lgan kurslardan birini tanlang. Kurs davomida portfolio to'plash, rezyume hosil qilish va ish topishingizga esa biz yordam beramiz."/>
-                <Container>
+                <Container id='container'>
                     <StudyTypes />
                     <Courses />
                     <SuccessAcademy />

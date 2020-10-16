@@ -1,5 +1,6 @@
 .projects__item {
-    width: 21%;
+    width: 260px;
+    margin: 0 20px;
     height: fit-content;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
