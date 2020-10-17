@@ -1,0 +1,20 @@
+.course__item {
+    width: 22%;
+    height: fit-content;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: all .2s linear;
+}
+
+.course__item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+}
+
+.course__img {
+    margin: 46px auto;
+}
+
+.svg__size {
+    font-size: 13px;
+}

@@ -1,7 +1,19 @@
+
 .aside {
-    width: 256px;
+    position: fixed;
     height: 768px;
+    padding: 0 23px;
     background-color: #303956;
+}
+
+.main {
+    margin-left: 17%;
+}
+
+.header {
+    position: fixed;
+    width: 83%;
+    z-index: 2;
 }
 
 .menu__item, h5, h6, .svg {
@@ -11,13 +23,17 @@
     fill: #48526B !important;
 }
 
+.menu__item {
+    margin-left: 12px;
+}
+
 .menu__item:hover, .hov:hover .svg {
     color: #fff !important;
     fill: #fff !important;
 }
 
 .search {
-    background-color: #212A45;
+    background-color:  #b9b9b9;
     border: 0;
 }
 
@@ -28,7 +44,7 @@
 .burger {
     padding: 4px 10px !important;
     padding-bottom: 8px !important;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
@@ -37,22 +53,26 @@
 }
 
 .burger:hover {
-    background-color: #48526B;
+    background-color: #303956;
 }
 
 .nav-link {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
     color:#BFBFBF !important;
 
+} 
+ 
+.nav-link:hover {
+    color: #303956 !important ;
 }
 
-.nav-link:hover {
-    color: #48526B !important;
+.nav-link__active {
+    color: #303956 !important ;
 }
 
 .avtoriz {
-    color: #48526B !important;
+    color: #303956 !important;
     padding: 5px 10px !important;
     border: 1px solid !important;
     border-radius: 5px;
@@ -60,78 +80,5 @@
 
 .avtoriz:hover {
     color: #fff !important;
-    background-color: #48526B !important;
+    background-color: #303956;
 }
-
-.lecture {
-    height: fit-content;
-    padding: 60px 80px;
-    background: url(../../img/lecture2.jpg), #6265F2;
-    background-blend-mode: soft-light;
-}
-
-
-.wh__btn {
-    padding: 10px 70px;
-    border-radius: 7px;
-    color: #212A45 !important;
-    font-size: 20px;
-    font-weight: 700;
-    background-color: #fff !important;
-}
-
-.wh__btn:hover {
-    color: #fff !important;
-    background-color: #212A45 !important;
-}
-/*.demo {
-    display: inline-block;
-    position: relative;
-    width: 250px;
-    height: 205px;
-    margin: 0 .5em;
-    background: url(http://placekitten.com/250/205);
-    background-position: 100% 0px;
-    border-radius: 1em;  
-    text-align: left; }
-    
-    .demo::before {
-      content: '';
-      display: block;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background: url(http://placekitten.com/250/205);
-      border-radius: inherit; 
-      opacity: 0;
-      transition: all .5s;
-      }
-    
-    .demo::after {
-      content: attr(data-mode);
-      display: block;
-      position: absolute;
-      top: .5em;
-      right: .5em;
-      padding: .3em .7em;
-      background: rgba(255,255,255,.5);
-      border-radius: .7em;
-      text-shadow: 0 1px 1px #FFF;
-      }
-    
-      
-  .demo--screen {
-    background-color: teal;
-    background-blend-mode: screen;
-    }
-  
-  .demo--luminosity {
-    background-color: coral;
-    background-blend-mode: luminosity;
-    }
-  
-  .demo:hover:before {
-    opacity: 1;
-    }*/

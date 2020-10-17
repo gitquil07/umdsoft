@@ -1,0 +1,42 @@
+.header-profile {
+    padding: 12px 17px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+}
+
+.header-profile__progress-img {
+    height: fit-content;
+    padding: 5px 8px;
+    border-radius: 7px;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.header-profile__progress-text {
+    color: #c3c7cf;
+    font-size: 14px;
+    font-weight: 450;
+    font-style: normal;
+    letter-spacing: normal;
+}
+
+.header-profile__details-user-img {
+    width: 35px;
+    border-radius: 50%;
+}
+
+.header-profile__details-count {
+    width: fit-content;
+    padding: 2px 5px;
+    border: 2px solid red;
+    border-radius: 50%;
+    background-color: #fff;
+    font-size: 9px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 11px;
+}
+
+.header-profile__details-count {
+    top: -9px;
+    right: -5px;
+}

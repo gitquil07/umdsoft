@@ -1,0 +1,38 @@
+
+.study__types__item {
+    width: 49%;
+    padding: 21px;
+    padding-bottom: 16px;
+    border-radius: 5px;
+}
+
+.st__head{
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 61px;
+}
+
+.st__p {
+    margin-top: 9px;
+    margin-bottom: 41px;
+    font-size: 14px;
+    color: #e5e5e5;
+}
+
+.plusik {
+    float: right;
+    width: 28px;
+    height: 20px;
+    font-weight: 500;
+    padding-left: 7px;
+    padding-top: 1px;
+    padding-bottom: 26px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.plusik:hover {
+    color: #fff;
+    background-color: #4f56f5;
+}

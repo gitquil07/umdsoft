@@ -1,5 +1,58 @@
 a {
   text-decoration: none !important;
+  transition: all .2s linear;
+}
+
+.bg__blue {
+  background-color: #4f56f5;
+}
+
+.col__light__blue {
+  color: #4f56f5;
+}
+
+.col__blue {
+  color: #303956;
+}
+
+.col__green {
+  color: #07C400
+}
+
+.bg__green {
+  background-color: #07C400;
+}
+
+.col__gold {
+  color: #FF8800;
+}
+
+.bg__gold {
+  background-color: #FF8800;
+}
+
+.col__56 {
+  color: #565656 !important;
+}
+
+.col__48 {
+  color: #48526b !important;
+}
+
+.bg__48 {
+  background-color: #48526b !important;
+}
+
+
+.after__header {
+  margin-top: 69px;
+  margin-left: 17%;
+}
+
+.container {
+  width: 92% !important;
+  max-width: 100% !important;
+  padding: 0 !important;
 }
 
 .regWrapper{

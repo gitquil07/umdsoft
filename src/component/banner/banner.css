@@ -1,0 +1,79 @@
+.lecture {
+    height: fit-content;
+    padding: 66px 0;
+    background: url(../../img/lecture2.jpg), #6265F2;
+    background-blend-mode: soft-light;
+}
+
+.lecture__h1 {
+    width: 65%;
+    font-size: 50px !important;
+    font-weight: 400;
+    font-style: normal !important;
+}
+
+.lecture__p {
+    width: 63%;
+    margin: 19px 0 26px;
+    line-height: 27px;
+}
+
+.lecture__p:last-child {
+    margin-top: 25px;
+}
+
+.lecture__a:hover {
+    color: #212A45 !important;
+}
+
+.wh__btn {
+    padding: 12px 72px;
+    border-radius: 7px;
+    color: #212A45 !important;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #fff !important;
+}
+
+.wh__btn:hover {
+    color: #fff !important;
+    background-color: #212A45 !important;
+}
+
+/* ACHIEVEMENTS */
+/*===================================*/
+
+.achievements {
+    padding: 23px 0 !important;
+}
+
+.achievement__item {
+    border-radius: 50%;
+}
+
+.ach__head {
+    color: #303956;
+    font-weight: 500;
+}
+
+.ach__text{
+    font-size: 12px;
+    line-height: 16px;
+    color: #707070;
+}
+
+.achievements-person {
+    padding: 8px 15px 10px;
+}
+
+.achievements-video {
+    padding: 8px 13px 10px 19px;
+}
+
+.achievements-success {
+    padding: 9px 14px;
+}
+
+.achievements-comments {
+    padding: 10px 11px 10px 12px;
+}

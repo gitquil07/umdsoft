@@ -1,0 +1,20 @@
+.tabs {
+    border: 0;
+}
+
+.tabs .nav-link {
+    margin: 0 2px;
+    color: #303956 !important;
+    background-color: #d5e3ff;
+    border-radius: 5px;
+    transition: all .1s linear;
+}
+
+.tabs .nav-link:hover {
+    transform: translateY(-5px);
+}
+
+.tabs .active {
+    color: #fff !important;
+    background-color: #4f56f5 !important;
+}
