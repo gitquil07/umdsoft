@@ -1,6 +1,5 @@
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
-import './style.css';
 
 import Menu from './component/menu/menu'
 import { Registration } from './pages/index';
@@ -9,7 +8,9 @@ import { ForgotPassword } from './pages';
 import { OnlineSchool } from './pages'
 import { Home } from './pages'
 import { Footer } from './component'
+import { HeaderProfile } from './component'
 import './style.css';
+import Profile from './pages/profile';
 // import Registration from './pages/registration/registration';
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
       { /*<Login /> 
       { /*<ForgotPassword />*/}
 
-      <Router>
+      {/* <Router>
         <Menu /> 
         <Switch>
             <Route exact path="/" component={Home} />
@@ -31,7 +32,9 @@ function App() {
         </Switch>
       </Router> 
 
-      <Footer />
+      <Footer /> */}
+
+      <Profile />
     </div>
   );
 }

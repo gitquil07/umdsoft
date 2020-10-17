@@ -43,6 +43,12 @@ a {
   background-color: #48526b !important;
 }
 
+
+.after__header {
+  margin-top: 69px;
+  margin-left: 17%;
+}
+
 .container {
   width: 92% !important;
   max-width: 100% !important;

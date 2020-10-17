@@ -16,11 +16,6 @@
     z-index: 2;
 }
 
-.after__header {
-    margin-top: 69px;
-    margin-left: 17%;
-}
-
 .menu__item, h5, h6, .svg {
     margin: 0;
     color: #48526B !important;

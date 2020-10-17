@@ -1,0 +1,79 @@
+
+.myCourses-head-title {
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.myCourses-head-text {
+    color: #c3c7cf;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+.myCourses {
+    border-radius: 5px;
+}
+
+.myCourses-main {
+    padding: 35px 0;
+    border-radius: 5px;
+    text-align: center;
+    background: url(../../img/coding.jpg), #6265F2 no-repeat;
+    background-size: cover;
+    background-blend-mode: soft-light;
+    opacity: 0.85;
+}
+
+.myCourses-title {
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+.myCourses-tags {
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.myCourses-tags-container {
+    margin-right: 15px;
+}
+
+.myCourses-btn {
+    padding: 10px 25px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.myCourses-btn:hover {
+    background-color: #6265F2;
+}
+
+.myCourses__stage {
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+.myCourses__teacher {
+    color: #c3c7cf;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+}
+
+.myCourses__mark-text {
+    color: #c3c7cf;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
