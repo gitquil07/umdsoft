@@ -1,0 +1,144 @@
+.feedbacks{
+  display:flex;
+  justify-content:center;
+}
+
+.feedback-container{
+  margin:68px 0 78px 0;
+}
+
+.feedback-slides{
+  width:640px;
+  height:170px;
+  position:relative;
+  overflow-x:hidden;
+}
+
+.feedback-slide{
+  width:598px;
+  visibility:hidden;
+  position:absolute;
+  top:10px;
+  left:10px;
+}
+
+.feedback{
+  box-sizing:border-box;
+  padding:24px 14px 28px 48px;
+  border-radius:5px;
+  box-shadow:0 0 15px rgba(0, 0, 0, 0.1);
+  min-height:145px;
+  background-color:#fff;
+  position:relative;
+}
+
+.feedback:before,
+.feedback:after{
+  position:absolute;
+}
+
+.feedback:before{
+  content:"";
+  width:5px;
+  height:110px;
+  background-color:#c3c7cf;
+  border-radius:50px;
+  left:23px;
+  top:calc(50% - 55px);
+}
+
+.feedback:after{
+  content:"";
+  width:0;
+  height:0;
+  border-top:15px solid #fff;
+  border-right:10px solid transparent;
+  border-left:10px solid transparent;
+  bottom:-10px;
+  left:32px;
+}
+
+.next-feedback{
+  display:inline-block;
+  width:37px;
+  height:41px;
+  border-radius:50%;
+  box-shadow:0 0 15px rgba(0, 0, 0, 0.1);
+  background:url(../../svg/Icon_material-keyboard-arrow-right.svg) no-repeat 55% 50% #fff;
+  position:absolute;
+  right:13px;
+  bottom:29px;
+  cursor:pointer;
+}
+
+.next-feedback:hover{
+  transform:scale(1.05);
+}
+
+.feedback-rates{
+  width:100%;
+  margin-top:17px;
+  height:54px;
+  position:relative;
+}
+
+.students-rate{
+  display:flex;
+  width:300px;
+  position:absolute;
+  top:0;
+  left:10px;
+  visibility:hidden;
+}
+
+.students-rate img{
+  width:47px;
+  height:54px;
+  border-radius:50%;
+  background-color:#48526b;
+  margin-right:12px;
+  display:inline-block;
+  border:none;
+}
+
+.activeFeedback{
+  visibility:visible;
+}
+
+
+/* Animating */
+
+@keyframes fadeInFeedback{
+  from{
+    left:-600px;
+    visibility:hidden;
+  }
+  to{
+    left:10px;
+    visibility:visible;
+  }
+}
+@keyframes fadeOutFeedback{
+  from{
+    left:0;
+    visibility:visible;
+  }
+  to{
+    left:610px;
+    visibility:hidden
+  }
+}
+
+.fadeInFeedback{
+  animation-name: fadeInFeedback;
+  animation-duration:1s;
+  animation-fill-mode:forwards;
+  animation-timing-function:linear;
+  animation-delay:.1s;
+}
+
+.fadeOutFeedback{
+  animation-name: fadeOutFeedback;
+  animation-duration:1s;
+  animation-timing-function:linear;
+}

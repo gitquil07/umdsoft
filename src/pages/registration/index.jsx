@@ -10,6 +10,8 @@ const Registration = () => {
   let [confirmPassword, setConfirmPassword] = useState("");
   let [errorReg, setErrorReg] = useState("");
 
+  let [toggle, setToggle] = useState(false);
+
 
   const handleSubmit = async (e) =>  {
     let formData  = new FormData(document.forms[0]);
@@ -31,6 +33,12 @@ const Registration = () => {
 
     e.preventDefault();
   }
+
+  const setType = (e) => { 
+    setToggle(!toggle);
+    e.preventDefault();
+  }
+
 
   return(
     <div className="regWrapper">
@@ -64,18 +72,19 @@ const Registration = () => {
           <span className="inputIcon"></span>
             <input 
                 id="password"
-                type="password"
+                type={toggle? 'text' : 'password'}
                 name="password"
                 onChange={e => setPassword(e.target.value)}
                 value={password}
                 placeholder="******************" />
+                <button onClick={e => setType(e)}>{toggle? "hide" : 'show'}</button>
           </div>
           <label htmlFor="confirmPassword">Parolni tasdiqlash</label>
           <div className="inputs">
           <span className="inputIcon"></span>
             <input 
                 id="confirmPassword"
-                type="password"
+                type={toggle? "text" : "password"}
                 name="confirmPassword"
                 onChange={e => setConfirmPassword(e.target.value)}
                 value={confirmPassword}

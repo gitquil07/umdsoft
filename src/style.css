@@ -140,4 +140,13 @@ a {
   cursor:pointer;
 }
 
+.col__gold {
+  color: #FF8800;
+}
+
+.after__header{
+  margin-top:69px;
+  margin-left:17%;
+}
+
 
