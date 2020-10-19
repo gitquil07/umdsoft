@@ -13,10 +13,10 @@ class OnlineSchool extends React.Component {
 
     render() {
         return(
-            <div id='after__header' className='after__header bg-light'>
+            <>
                 <Banner title={'Onlayn maktab - barcha uchun!'} text={"Uyda dars berish va o'qish qobiliyati - samarali va qulay. Success School foydali va bepul manbalar va masofaviy ta'lim uchun xizmatlarni o'z ichiga oladi. Bolalar, o'qituvchilar va ota-onalar uchun."}/>
                 <Container>
-                    <div className='py-5'>
+                    <div className='py-5 bg-light'>
                         <Tabs className='tabs' defaultActiveKey="subjects" id="uncontrolled-tab-example">
                             <Tab eventKey="subjects" className='' title="BARCHA FANLAR">
                                 <Subjects />
@@ -31,7 +31,7 @@ class OnlineSchool extends React.Component {
                     </div>
 
                 </Container>
-            </div>
+            </>
         )
     }
 }

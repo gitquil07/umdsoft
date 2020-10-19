@@ -22,7 +22,7 @@ class Projects extends React.Component {
                         />
                     </div>
                     <div className='h-50'>
-                        <div className='pt-2  px-2 pb-3 border-bottom'>
+                        <div className='pt-2 px-2 pb-3 border-bottom'>
                             <div className='d-flex justify-content-between'>
                                 <h5 className='mb-1 col__56 font-weight-bold'>WEB DARSLARI</h5>
                                 <i role='button' className="heart__icon fas fa-heart col__green"></i>

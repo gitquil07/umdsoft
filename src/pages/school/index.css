@@ -14,7 +14,12 @@
     transform: translateY(-5px);
 }
 
+.active {
+    background-color:#f8f9fa !important;
+}
+
 .tabs .active {
     color: #fff !important;
     background-color: #4f56f5 !important;
 }
+

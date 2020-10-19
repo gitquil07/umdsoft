@@ -2,7 +2,9 @@
 .aside {
     position: fixed;
     height: 768px;
+    left: 0;
     padding: 0 23px;
+    z-index: 3;
     background-color: #303956;
 }
 
@@ -11,9 +13,15 @@
 }
 
 .header {
+    padding: 16px 5px;
     position: fixed;
     width: 83%;
     z-index: 2;
+    right: 0;
+}
+
+.header-nav-menu {
+    display: flex;
 }
 
 .menu__item, h5, h6, .svg {
@@ -82,3 +90,4 @@
     color: #fff !important;
     background-color: #303956;
 }
+

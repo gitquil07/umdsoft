@@ -13,7 +13,7 @@ class Banner extends React.Component {
     render() {
         let {title, text}  = this.props;
         return (
-            <div className='w-100'> {/* Banner */}
+            <div className='w-100 banner bg-light'> {/* Banner */}
                 <div className='lecture'>
                     <div className='container' id='container'>
                         <h1 className='lecture__h1 text-white'>{title}</h1>
@@ -24,7 +24,7 @@ class Banner extends React.Component {
                 </div>
 
                 <div className='d-flex container justify-content-between achievements'>
-                    <div className='d-flex'>
+                    <div className='d-flex py-3'>
                         <div className='achievement__item bg__blue achievements-person'>
                             <img 
                                 src={person}
@@ -36,7 +36,7 @@ class Banner extends React.Component {
                         </div>
                     </div>
 
-                    <div className='d-flex'>
+                    <div className='d-flex py-3'>
                         <div className='achievement__item bg__blue achievements-video'>
                             <img 
                                 src={video}
@@ -48,7 +48,7 @@ class Banner extends React.Component {
                         </div>
                     </div>
 
-                    <div className='d-flex'>
+                    <div className='d-flex py-3'>
                         <div className='achievement__item bg__blue achievements-success'>
                             <img 
                                 src={success}
@@ -60,7 +60,7 @@ class Banner extends React.Component {
                         </div>
                     </div>
 
-                    <div className='d-flex'>
+                    <div className='d-flex py-3'>
                         <div className='achievement__item bg__blue achievements-comments'>
                             <img 
                                 src={comments}
