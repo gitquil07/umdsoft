@@ -12,7 +12,7 @@ class Sponsors extends React.Component {
         return (
             <div className='pb-5'>
                 <ItemContainer title='Bizning hamkorlarimiz'>
-                    <div className='d-flex mt-4  justify-content-between'>
+                    <div className='d-flex flex-wrap mt-4  justify-content-between'>
                         <div>
                             <img 
                                 src={atam}

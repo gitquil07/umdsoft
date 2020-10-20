@@ -107,6 +107,10 @@
     background-color:  #4f56f5;
 }
 
+.task-card__date {
+    text-align: right;
+}
+
 .more-item__link {
     padding: 7px 60px;
     border-radius: 5px;

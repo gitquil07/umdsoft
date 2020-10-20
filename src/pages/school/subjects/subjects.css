@@ -41,17 +41,11 @@
 
 .collapse__div {
     margin-top: 8px;
-    position: fixed;
     height: 0;
     overflow: hidden;
     transition: all .2s linear;
     width: 100%;
     background-color: #F8F9FA;
-    border-bottom: 1px solid #dee2e6;
-    border-right: 1px solid #dee2e6;
-    border-left: 1px solid #dee2e6;
-    box-shadow: 0 4px 5px rgba(0, 0, 0, .3);
-
 }
 
 .subjects__item:hover .collapse__div {

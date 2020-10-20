@@ -23,8 +23,8 @@ class Banner extends React.Component {
                     </div>
                 </div>
 
-                <div className='d-flex container justify-content-between achievements'>
-                    <div className='d-flex py-3'>
+                <div className='d-flex flex-wrap container justify-content-between achievements'>
+                    <div className='d-flex py-3 mx-2'>
                         <div className='achievement__item bg__blue achievements-person'>
                             <img 
                                 src={person}
@@ -36,7 +36,7 @@ class Banner extends React.Component {
                         </div>
                     </div>
 
-                    <div className='d-flex py-3'>
+                    <div className='d-flex py-3 mx-2'>
                         <div className='achievement__item bg__blue achievements-video'>
                             <img 
                                 src={video}
@@ -48,7 +48,7 @@ class Banner extends React.Component {
                         </div>
                     </div>
 
-                    <div className='d-flex py-3'>
+                    <div className='d-flex py-3 mx-2'>
                         <div className='achievement__item bg__blue achievements-success'>
                             <img 
                                 src={success}
@@ -60,7 +60,7 @@ class Banner extends React.Component {
                         </div>
                     </div>
 
-                    <div className='d-flex py-3'>
+                    <div className='d-flex py-3 mx-2'>
                         <div className='achievement__item bg__blue achievements-comments'>
                             <img 
                                 src={comments}

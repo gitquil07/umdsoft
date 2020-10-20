@@ -193,7 +193,7 @@ a {
 }
 
 .after__header{
-  margin-top:82px;
+  margin-top: 6%;
   margin-left: 17%;
 }
 
@@ -236,18 +236,39 @@ a {
     }
 }
 
+@media (max-width: 1050px) {
+  .tasks {
+    width: 100% !important;
+  }
+}
+
 @media (max-width: 990px) {
+
+
+  /* ONLINE REPETITOR */
+
+  .advice-item {
+    flex-wrap: wrap;
+  }
+
+  .advice-main {
+    width: 70%;
+  }
+
+  .advice-details {
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+  }
+
+  /* ONLINE REPETITOR */
+
 
 }
 
 @media (max-width: 770px) {
     
-    .aside {
-        width: 20% !important;
-    }
-    
     .header {
-        width: 80% !important;
         padding: 4px 1px;
     }
 
@@ -262,13 +283,142 @@ a {
     .header-nav-menu {
       display: block;
     }
+
+    .after__header {
+      margin-top: 153px;
+    }
+
+    /* BANNER STYLES */
+
+    .lecture {
+      padding: 15px 0;
+    }
+
+    .lecture__h1 { 
+      width: 90%;
+      font-size: 40px;
+    }
+
+    .lecture__p {
+      width: 100%;
+    }
+
+    .wh__btn {
+      padding: 6px 54px;
+      font-size: 18px;
+    }
+
+    /* BANNER STYLES */
+
+    /* ONLINE REPETITOR */
+
+    .advice-main {
+      width: 50%;
+      text-align: right;
+    }
+
+
+    /* ONLINE REPETITOR */
+
+    /* SCHOOL STYLES */
+
+    .subjects__item {
+      width: 215px;
+    }
+
+
+    /* SCHOOL STYLES */
+
+    .footer__item {
+      width: 80%;
+    }
+}
+
+@media (max-width: 730px) {
+  .tasks {
+    flex-wrap: wrap;
+  }
+
+  .task-item__img {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 690px) {
-    
+  .subjects__item {
+    width: 195px;
+  }
+
+  .menu-icons {
+    display: none;
+  }
+
+  /* ONLAY REPETITOR */
+
+  .advice-details__time {
+    font-size: 16px;
+  }
+
+  .advice-details__price {
+    font-size: 22px;
+  }
+
+  .advice-details__link {
+    font-size: 11px;
+  }
+  /* ONLAY REPETITOR */
+
 }
 
 @media (max-width: 550px) {
+  .aside {
+    padding: 2px;
+  }
+
+  .search-btn {
+    top: 38px !important;
+    right: 27% !important;
+  }
+
+  
+
+  .menu__text {
+    font-size: 14px;
+  }
+
+  .menu__item {
+    margin-left: 0px;
+    font-size: 13px;
+  }
+
+  /* ONLAY REPETITOR */
+
+  .advice-details {
+    flex-direction: column;
+  }
+  /* ONLAY REPETITOR */
+  
     
-    
+}
+
+@media (max-width: 480px) {
+  /* ONLAYN REPETITOR */
+
+  .advice-main {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 350px) {
+
+  .after__header {
+    margin-top: 176px;
+
+  }
+
+  .menu__item {
+    font-size: 12px;
+  }
 }

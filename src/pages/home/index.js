@@ -12,7 +12,7 @@ class Home extends React.Component {
         return (
             <> 
                 <Banner title="Dasturlashni qulay muhitda o'rganing" text="Dasturlash sohasida eng rivojlangan va talabi yuqori bo'lgan kurslardan birini tanlang. Kurs davomida portfolio to'plash, rezyume hosil qilish va ish topishingizga esa biz yordam beramiz."/>
-                <Container id='container'>
+                <Container>
                     <StudyTypes />
                     <Courses />
                     <Interface />
