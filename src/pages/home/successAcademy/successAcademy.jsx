@@ -21,7 +21,7 @@ class SuccessAcademy extends React.Component {
                             </p>
                         
                             <Form>
-                                <div className='d-flex justify-content-between'>
+                                <div className='d-flex justify-content-between certificate__form'>
                                     <Form.Group controlId='certificateCode'>
                                         <Form.Label for='certificateCode' ><h6>Sertifikat kodi va raqami</h6></Form.Label>
                                         <Form.Control id='certificateCode' type='text' placeholder='CER-U0000000' className='text-center' required></Form.Control>
@@ -38,6 +38,7 @@ class SuccessAcademy extends React.Component {
                         <div className='certificate__item'>
                             <img 
                                 src={certificate}
+                                className='certificate-item__img'
                             />
                         </div>
                     </div>

@@ -13,31 +13,31 @@ class Sponsors extends React.Component {
             <div className='pb-5'>
                 <ItemContainer title='Bizning hamkorlarimiz'>
                     <div className='d-flex flex-wrap mt-4  justify-content-between'>
-                        <div>
+                        <div className='sponsors-item m-2'>
                             <img 
                                 src={atam}
                             />
                         </div>
 
-                        <div>
+                        <div className='sponsors-item m-2'>
                             <img 
                                 src={digaTech}
                             />
                         </div>
 
-                        <div>
+                        <div className='sponsors-item m-2'>
                             <img 
                                 src={ptc}
                             />
                         </div>
 
-                        <div>
+                        <div className='sponsors-item m-2'>
                             <img 
                                 src={protech}
                             />
                         </div>
 
-                        <div>
+                        <div className='sponsors-item m-2'>
                             <img 
                                 src={genetec}
                             />

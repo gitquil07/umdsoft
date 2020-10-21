@@ -227,6 +227,30 @@ a {
 }
 
 @media (max-width: 1150px) {
+
+  /* IT AKADEMIYA */
+
+  .certificate__items {
+    flex-wrap: wrap;
+  }
+
+  .certificate__item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .course-items {
+    flex-wrap: wrap;
+  }
+
+  .course__item {
+    width: 26%;
+    margin: 10px;
+  }
+
+  /* IT AKADEMIYA */
+
+
     .aside {
         padding: 0 7px;
     }
@@ -243,6 +267,14 @@ a {
 }
 
 @media (max-width: 990px) {
+
+  /* IT AKADEMIYA */
+
+  .course__item {
+    width: 40%;
+  }
+
+  /* IT AKADEMIYA */
 
 
   /* ONLINE REPETITOR */
@@ -309,6 +341,34 @@ a {
     }
 
     /* BANNER STYLES */
+
+    /* IT AKADEMIYA */
+
+      .study__types__items {
+        flex-wrap: wrap;
+      }
+
+      .study__types__item {
+        margin-bottom: 15px;
+        width: 100%;
+      }
+
+      .st__head {
+        margin: 0 !important;
+      }
+
+      .st__p {
+        margin: 0;
+        margin-bottom: 10px;
+      }
+
+      .sponsors-item {
+        width: 45%;
+      }
+
+    /* IT AKADEMIYA */
+
+
 
     /* ONLINE REPETITOR */
 
@@ -391,6 +451,22 @@ a {
     margin-left: 0px;
     font-size: 13px;
   }
+
+  /* IT AKADEMIYA */
+
+  .course__item {
+    width: 100%;
+  }
+
+  .certificate-item__img {
+    width: 100%;
+  }
+
+  .certificate__form {
+    flex-wrap: wrap;
+  }
+
+  /* IT AKADEMIYA */
 
   /* ONLAY REPETITOR */
 
