@@ -1,0 +1,143 @@
+.results-container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  margin-bottom:50px;
+}
+
+.result-item{
+  width:332px;
+  background-color:#fff;
+  border-radius:5px;
+  box-shadow:0 3px 6px rgba(0, 0, 0, 0.06);
+  margin:5px;
+}
+
+.result-block{
+  display:flex;
+  box-sizing:border-box;
+  padding:8px 12px;
+  justify-content:space-between;
+}
+
+.result-block div:first-child{
+  display:flex;
+}
+
+.passed-course{
+  line-height:17px;
+}
+
+.passed-course a,
+.result span{
+  color:#303956;
+  font-size:14px;
+  font-weight:700;
+}
+
+.course-status,
+.result{
+  font-size:12px;
+  color:#c3c7cf;
+}
+
+.passed-course a span{
+  text-transform:uppercase;
+}
+
+.result-block .result{
+  text-align:right;
+}
+
+.passed-course img{
+  margin-right:12px;
+}
+
+.re-pass a{
+  padding:6px 14px;
+  border:1px solid rgba(0, 0, 0, 0.21);
+  border-radius:3px;
+  color:#303956;
+}
+
+.re-pass a:hover{
+  background-color:#4F56F5;
+  color:#fff;
+}
+
+.rest{
+  border:none;
+  outline:none;
+  width:10px;
+  position:relative;
+  height:33px;
+  background:none !important;
+}
+
+.rest .dots{
+  display:inline-block;
+  width:4px;
+  height:4px;
+  border-radius:50%;
+  background-color:rgba(0, 0, 0, 0.21);
+  position:absolute;
+  left:0;
+  right:0;
+  margin:0 auto;
+}
+
+.rest .dots:nth-of-type(1){
+  top:7px;
+}
+
+.rest .dots:nth-of-type(2){
+  top:calc(50% - 2px);
+}
+
+.rest .dots:nth-of-type(3){
+  bottom:6px;
+}
+
+.zero-progress{
+  height:6px;
+  background-color:#f5f7fa;
+  position:relative;
+}
+
+.percent-container{
+  position:absolute;
+  top:-25px;
+  left:0;
+  display:none;
+}
+
+.percent{
+  height:20px;
+  width:30px;
+  line-height:20px;
+  border-radius:2px;
+  font-size:10px;
+  color:#fff;
+  background-color: rgba(0, 0, 0, 0.8);
+  position:relative;
+  text-align:center;
+}
+
+.percent:after{
+  content:"";
+  width:0;
+  height:0;
+  border-right:3px solid transparent;
+  border-left:3px solid transparent;
+  border-top:5px solid rgba(0, 0, 0, 0.8);
+  position:absolute;
+  bottom:-5px;
+  left:0;
+  right:0;
+  margin:0 auto;
+}
+
+.current-progress{
+  height:6px;
+  background-color:#4f56f5;
+}

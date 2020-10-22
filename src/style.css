@@ -58,6 +58,37 @@ a {
   border-radius:10px;
 }
 
+.profile-buttons{
+  height:43px;
+  line-height:43px;
+  border-radius:3px;
+  font-weight:500;
+  display:block;
+  background-color:#4f56f5;
+  text-align:center;
+  color:#fff;
+  margin-bottom:23px;
+  border:none;
+  text-transform:uppercase;
+  width:100%;
+
+  -webkit-transition:all .2s linear;
+  -moz-transition:all .2s linear;
+  -o-trsnsition:all .2s linear;
+}
+
+.profile-buttons:hover{
+  color:#fff !important;
+  background-color:#757CF5;
+}
+
+.panel-offsets{
+  margin-bottom:23px;
+  height:fit-content;
+  position:relative;
+  overflow:hidden;
+}
+
 .formHeader,
 .formFooter{
   text-align:center;
@@ -187,6 +218,30 @@ a {
   color:#999;
   cursor:pointer;
 }
+.panel>div{
+  background-color:#fff;
+  margin-bottom:17px;
+}
+
+.panel h1,
+.panel a{
+  text-transform:uppercase;
+}
+
+.panel h1{
+  text-align:center;
+  color:#303956;
+  padding:11px 0;
+  margin:0;
+  border-bottom:1px solid rgba(0, 0, 0, 0.11);
+  font-size:20px;
+  font-weight:300;  
+}
+
+.panel-content{
+  padding:16px 26px;
+}
+
 
 .col__gold {
   color: #FF8800;
@@ -221,9 +276,7 @@ a {
 }
 
 @media (max-width: 1200px) {
-  .slider {
-    flex-direction: column;
-  }
+
 }
 
 @media (max-width: 1150px) {
@@ -331,6 +384,22 @@ a {
 
     .footer__item {
       width: 80%;
+    }
+
+    /* PROFILE STYLES */
+
+    .profile{
+      flex-direction:column-reverse;
+    }
+
+    .user-panel{
+      width:80%;
+      margin:0 auto;
+      border:none;
+    }
+
+    .panel-offsets img{
+      height:300px;
     }
 }
 

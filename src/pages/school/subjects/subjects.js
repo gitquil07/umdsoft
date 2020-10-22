@@ -37,7 +37,7 @@ class Projects extends React.Component {
                             </div>
                         
                             <p className='subjects__text px-2'>Malakali pedagoglar tomonidan 5-11 sinflar uchun tayyorlangan darsliklar</p>
-                            <div class="collapse__div">
+                            <div className="collapse__div">
                                 <ul className=''>
                                     <li className='pl-0 subject__li'><span className='subjects__text'>Maktab dars rejasi asosida</span></li>
                                     <li className='pl-0 subject__li'><span className='subjects__text'>Har haftalik jadval</span></li>
@@ -74,7 +74,7 @@ class Projects extends React.Component {
                             </div>
                         
                             <p className='subjects__text px-2'>Malakali pedagoglar tomonidan 5-11 sinflar uchun tayyorlangan darsliklar</p>
-                            <div class="collapse__div">
+                            <div className="collapse__div">
                                 <ul className=''>
                                     <li className='pl-0 subject__li'><span className='subjects__text'>Maktab dars rejasi asosida</span></li>
                                     <li className='pl-0 subject__li'><span className='subjects__text'>Har haftalik jadval</span></li>
@@ -111,7 +111,7 @@ class Projects extends React.Component {
                             </div>
                         
                             <p className='subjects__text px-2'>Malakali pedagoglar tomonidan 5-11 sinflar uchun tayyorlangan darsliklar</p>
-                            <div class="collapse__div">
+                            <div className="collapse__div">
                                 <ul className=''>
                                     <li className='pl-0 subject__li'><span className='subjects__text'>Maktab dars rejasi asosida</span></li>
                                     <li className='pl-0 subject__li'><span className='subjects__text'>Har haftalik jadval</span></li>
@@ -148,7 +148,7 @@ class Projects extends React.Component {
                             </div>
                         
                             <p className='subjects__text px-2'>Malakali pedagoglar tomonidan 5-11 sinflar uchun tayyorlangan darsliklar</p>
-                            <div class="collapse__div">
+                            <div className="collapse__div">
                                 <ul className=''>
                                     <li className='pl-0 subject__li'><span className='subjects__text'>Maktab dars rejasi asosida</span></li>
                                     <li className='pl-0 subject__li'><span className='subjects__text'>Har haftalik jadval</span></li>
@@ -185,7 +185,7 @@ class Projects extends React.Component {
                             </div>
                         
                             <p className='subjects__text px-2'>Malakali pedagoglar tomonidan 5-11 sinflar uchun tayyorlangan darsliklar</p>
-                            <div class="collapse__div">
+                            <div className="collapse__div">
                                 <ul className=''>
                                     <li className='pl-0 subject__li'><span className='subjects__text'>Maktab dars rejasi asosida</span></li>
                                     <li className='pl-0 subject__li'><span className='subjects__text'>Har haftalik jadval</span></li>

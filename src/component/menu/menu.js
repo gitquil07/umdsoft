@@ -28,6 +28,7 @@ class Menu extends React.Component {
         let footer = document.querySelector('#footer');
         let after__header = document.querySelector('.after__header');
         let tasks = document.querySelectorAll('.tasks');
+        let profile = document.querySelector('#profile')
 
         menu.style.display = this.state.isOpen? "block" : "none";
         if(this.state.isOpen){
@@ -36,6 +37,7 @@ class Menu extends React.Component {
             header.style.width='83%'
             footer.style.marginLeft = '17%'
             after__header.style.marginLeft = '17%'
+            profile.style.marginLeft = '17%'
             for(let i=0; i<tasks.length; i++){
                 tasks[i].style.width = '90%'
             }
@@ -47,6 +49,7 @@ class Menu extends React.Component {
             header.style.width='100%'
             footer.style.marginLeft = '0%'
             after__header.style.marginLeft = '0%'
+            profile.style.marginLeft = '0%'
             for(let i=0; i<tasks.length; i++){
                 tasks[i].style.width = '48%'
             }

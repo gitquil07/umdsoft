@@ -1,0 +1,24 @@
+.panel>div{
+  background-color:#fff;
+  margin-bottom:17px;
+}
+
+.panel h1,
+.panel a{
+  text-transform:uppercase;
+}
+
+.panel h1{
+  text-align:center;
+  color:#303956;
+  padding:11px 0;
+  margin:0;
+  border-bottom:1px solid rgba(0, 0, 0, 0.11);
+  font-size:20px;
+  font-weight:300;  
+}
+
+.panel-content{
+  padding:16px 26px;
+}
+

@@ -12,9 +12,9 @@ class Footer extends React.Component {
                         <p className='footer__text col__48 mb-0'>Copyright © UMDSOFT. Barcha huquqlar himoyalangan</p>
                     </div>
                     <div className='footer__social'>
-                        <a href='#'><i class="col__48 fab fa-telegram-plane"></i></a>
-                        <a href='#'><i class="mx-3 col__48 fab fa-instagram"></i></a>
-                        <a href='#'><i class="fab col__48 fa-twitter"></i></a>
+                        <a href='#'><i className="col__48 fab fa-telegram-plane"></i></a>
+                        <a href='#'><i className="mx-3 col__48 fab fa-instagram"></i></a>
+                        <a href='#'><i className="fab col__48 fa-twitter"></i></a>
                     </div>
                 </Container>
             </div>

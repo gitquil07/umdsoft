@@ -134,7 +134,7 @@ class Courses extends React.Component {
                                     <div className='pt-2 pb-3 border-bottom'>
                                         <div className='d-flex justify-content-between'>
                                             <h5 className='mb-1 col__56 font-weight-bold'>PYTHON DEVELOPMENT</h5>
-                                            <i role='button' class="far fa-heart col__green"></i>
+                                            <i role='button' className="far fa-heart col__green"></i>
                                         </div>
                                         <div>
                                             <i role='button' className="svg__size mr-1 fas fa-star col__gold"></i>

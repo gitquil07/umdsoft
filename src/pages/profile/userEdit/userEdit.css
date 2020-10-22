@@ -1,0 +1,73 @@
+.username{
+  border:1px solid #c3c7cf;
+  padding:8px;
+  font-weight:400;
+}
+
+.username,
+.user-info{
+  color:#c3c7cf;
+  border-radius:3px;
+  text-align:center;
+  font-size:14px;
+  box-sizing:border-box;
+}
+
+.username p{
+  text-transform:uppercase;
+  margin:0;
+}
+
+.user-info{
+  background:#fff5eb;;
+  font-weight:300;
+  padding:15px 22px;
+  border:1px solid #ffd2a4;
+  margin-top:13px;
+}
+
+.panel-offsets label{
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:100%;
+  margin:0;
+  height:44px;
+  padding:5px 0;
+  background:url(../../../svg/change-avatar.svg) no-repeat center center rgba(0, 0, 0, 0.48);
+  text-align:center;
+  transform:translateY(100%);
+  transition:transform .2s linear;
+  z-index:100;
+  cursor:pointer;
+}
+
+.panel-offsets img{
+  width:100%;
+  height:157px;
+  display:block;
+  margin:0 auto;
+  object-fit:contain;
+}
+
+.panel-offsets:hover label{
+  transform:translate(0);
+  
+}
+
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+  overflow: hidden;
+}
+
+
+
+
+

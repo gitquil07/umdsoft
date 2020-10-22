@@ -5,7 +5,9 @@ import StudyTypes from './studyTypes/studyTypes'
 import { Container } from 'react-bootstrap'
 import SuccessAcademy from './successAcademy/successAcademy'
 import Sponsors from './sponsors/sponsors'
-import Interface from './interface/interface'
+import Interface from './interface/interface';
+import { Feedback } from '../../component';
+import { ItemContainer } from '../../component';
 
 class Home extends React.Component {
     render() {
@@ -17,6 +19,9 @@ class Home extends React.Component {
                     <Courses />
                     <Interface />
                     <SuccessAcademy />
+                    <ItemContainer title="Bitiruvchilar fikri">
+                        <Feedback />
+                    </ItemContainer>
                     <Sponsors />
                 </Container>
             </>

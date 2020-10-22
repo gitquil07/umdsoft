@@ -21,19 +21,19 @@ class Tasks extends React.Component {
                         </a>
                         <div className='task-item__tags'>
                             <div className='task-item__tag-container'>
-                                <span className='task-item__tag-icon'><i class="fas fa-user"></i></span>
+                                <span className='task-item__tag-icon'><i className="fas fa-user"></i></span>
                                 <span className='task-item__tag-text'>11-12 yosh</span>
                             </div>
                             <div className='task-item__tag-container'>
-                                <span className='task-item__tag-icon'><i class="fas fa-clock"></i></span>
+                                <span className='task-item__tag-icon'><i className="fas fa-clock"></i></span>
                                 <span className='task-item__tag-text'>60 min</span>
                             </div>
                         </div>
                     </div>
                     <div className='task-item__details'>
                         <div className='taks-item__details-wrapper'>
-                            <span class='task-card__date-label'>Kursning eng yaqin sanasi</span>
-                            <span class='task-card__date'>19 oktabr, 19:00</span>
+                            <span className='task-card__date-label'>Kursning eng yaqin sanasi</span>
+                            <span className='task-card__date'>19 oktabr, 19:00</span>
                         </div>
                         <a href='#' className='task__item-details-button'>BATAFSIL</a>
                     </div>
@@ -53,19 +53,19 @@ class Tasks extends React.Component {
                         </a>
                         <div className='task-item__tags'>
                             <div className='task-item__tag-container'>
-                                <span className='task-item__tag-icon'><i class="fas fa-user"></i></span>
+                                <span className='task-item__tag-icon'><i className="fas fa-user"></i></span>
                                 <span className='task-item__tag-text'>11-12 yosh</span>
                             </div>
                             <div className='task-item__tag-container'>
-                                <span className='task-item__tag-icon'><i class="fas fa-clock"></i></span>
+                                <span className='task-item__tag-icon'><i className="fas fa-clock"></i></span>
                                 <span className='task-item__tag-text'>60 min</span>
                             </div>
                         </div>
                     </div>
                     <div className='task-item__details'>
                         <div className='taks-item__details-wrapper'>
-                            <span class='task-card__date-label'>Kursning eng yaqin sanasi</span>
-                            <span class='task-card__date'>19 oktabr, 19:00</span>
+                            <span className='task-card__date-label'>Kursning eng yaqin sanasi</span>
+                            <span className='task-card__date'>19 oktabr, 19:00</span>
                         </div>
                         <a href='#' className='task__item-details-button'>BATAFSIL</a>
                     </div>
@@ -85,19 +85,19 @@ class Tasks extends React.Component {
                         </a>
                         <div className='task-item__tags'>
                             <div className='task-item__tag-container'>
-                                <span className='task-item__tag-icon'><i class="fas fa-user"></i></span>
+                                <span className='task-item__tag-icon'><i className="fas fa-user"></i></span>
                                 <span className='task-item__tag-text'>11-12 yosh</span>
                             </div>
                             <div className='task-item__tag-container'>
-                                <span className='task-item__tag-icon'><i class="fas fa-clock"></i></span>
+                                <span className='task-item__tag-icon'><i className="fas fa-clock"></i></span>
                                 <span className='task-item__tag-text'>60 min</span>
                             </div>
                         </div>
                     </div>
                     <div className='task-item__details'>
                         <div className='taks-item__details-wrapper'>
-                            <span class='task-card__date-label'>Kursning eng yaqin sanasi</span>
-                            <span class='task-card__date'>19 oktabr, 19:00</span>
+                            <span className='task-card__date-label'>Kursning eng yaqin sanasi</span>
+                            <span className='task-card__date'>19 oktabr, 19:00</span>
                         </div>
                         <a href='#' className='task__item-details-button'>BATAFSIL</a>
                     </div>

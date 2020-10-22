@@ -22,12 +22,12 @@ class SuccessAcademy extends React.Component {
                         
                             <Form>
                                 <div className='d-flex justify-content-between'>
-                                    <Form.Group controlId='certificateCode'>
-                                        <Form.Label for='certificateCode' ><h6>Sertifikat kodi va raqami</h6></Form.Label>
+                                    <Form.Group id='certificateCode'>
+                                        <Form.Label htmlFor='certificateCode' ><h6>Sertifikat kodi va raqami</h6></Form.Label>
                                         <Form.Control id='certificateCode' type='text' placeholder='CER-U0000000' className='text-center' required></Form.Control>
                                     </Form.Group>
-                                    <Form.Group controlId='certificateCode'>
-                                        <Form.Label for='certificateDate'><h6>Sertifikat berilgan sana</h6></Form.Label>
+                                    <Form.Group id='certificateCode'>
+                                        <Form.Label htmlFor='certificateDate'><h6>Sertifikat berilgan sana</h6></Form.Label>
                                         <Form.Control id='certificateDate' type='date' placeholder='kk/oo/yy' className='text-center' required></Form.Control>
                                     </Form.Group>
                                 </div>
