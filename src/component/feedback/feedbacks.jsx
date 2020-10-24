@@ -23,9 +23,9 @@ const Feedback = () => {
         feedbacks[i].classList.add('fadeInFeedback');
         feedbacks[(i > 0)? i-1 : MAX_LENGTH - 1].classList.add('fadeOutFeedback');
         
-        rates[i].classList.add('activeFeedback');
-        rates[i].classList.add('fadeIn');
-        rates[(i > 0)? i-1 : MAX_LENGTH - 1].classList.add('fadeOut');
+        // rates[i].classList.add('activeFeedback');
+        rates[i].classList.add('fadeInRate');
+        rates[(i > 0)? i-1 : MAX_LENGTH - 1].classList.add('fadeOutRate');
       }
     }
   }
@@ -43,12 +43,12 @@ const Feedback = () => {
 
   const removeRates = (rates) => {
     rates.forEach(rate => {
-      if(rate.classList.contains('fadeIn')){
-        rate.classList.remove('fadeIn');
-        rate.classList.remove('activeFeedback');
+      if(rate.classList.contains('fadeInRate')){
+        rate.classList.remove('fadeInRate');
+        // rate.classList.remove('activeFeedback');
       }
-      if(rate.classList.contains('fadeOut')){
-        rate.classList.remove('fadeOut');
+      if(rate.classList.contains('fadeOutRate')){
+        rate.classList.remove('fadeOutRate');
       }
     });
   }
@@ -106,10 +106,10 @@ bilimlari bilan maqtanib kelmoqda</p>
             <span className="next-feedback" onClick={next}></span>
           </div>
           <div className="feedback-rates">
-            <div className="students-rate animate__animated">
+            <div className="students-rate">
               <img src={avatar} className="student-avatar" alt="user"/>
               <div className="rate">
-                <h5>Raximov Shaxzod</h5>
+                <span>Raximov Shaxzod</span>
                 <div>
                   <i role='button' className="svg__size mr-1 fas fa-star col__gold"></i>
                   <i role='button' className="svg__size mr-1 fas fa-star col__gold"></i>
@@ -120,10 +120,10 @@ bilimlari bilan maqtanib kelmoqda</p>
                 </div>
               </div>
             </div>
-            <div className="students-rate animate__animated">
+            <div className="students-rate">
               <img src={avatar} className="student-avatar" alt="user"/>
               <div className="rate">
-                <h5>Anvarov Alisher</h5>
+                <span>Anvarov Alisher</span>
                 <div>
                   <i role='button' className="svg__size mr-1 fas fa-star col__gold"></i>
                   <i role='button' className="svg__size mr-1 fas fa-star col__gold"></i>
@@ -134,10 +134,10 @@ bilimlari bilan maqtanib kelmoqda</p>
                 </div>
               </div>
             </div>
-            <div className="students-rate animate__animated ">
+            <div className="students-rate ">
               <img src={avatar} className="student-avatar" alt="user"/>
               <div className="rate">
-                <h5>Rahmatov Sherzod</h5>
+                <span>Rahmatov Sherzod</span>
                 <div>
                   <i role='button' className="svg__size mr-1 fas fa-star col__gold"></i>
                   <i role='button' className="svg__size mr-1 fas fa-star col__gold"></i>

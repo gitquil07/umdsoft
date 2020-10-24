@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactDOM from 'react-dom'
 import  './menu.css'
 import { Form, FormGroup, FormControl, Button } from 'react-bootstrap'
 import { NavLink } from 'react-router-dom'
@@ -8,17 +9,31 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 class Menu extends React.Component {
 
+    // componentWillUnmount() {
+    //     document.removeEventListener('click', this.handleClickOutside, false);
+    //   }
+      
+    //   // Вызывается до рендера
+    //   componentWillMount() {
+    //     document.addEventListener('click', this.handleClickOutside, false);
+    //   }
+      
+    //   handleClickOutside(event) {
+    //       // Получаем элемент, на который произведен клик
+    //       const domNode = ReactDOM.findDOMNode(this);
+      
+    //       // Проверяем, что элемент присутствует в переменной,
+    //       // а так же, является ли "domNode" узел потомком "event.target" узла.
+    //       // Если не является, то скрываем элемент.
+    //       if ((!domNode || !domNode.contains(event.target))) {
+    //           this.setState({
+    //               visible : false
+    //           });
+    //       }
+    //   }
+
     constructor(props){
         super(props);
-        this.state =   {
-            isOpen:true
-        }
-    }
-
-    viewAside(){
-        this.setState({
-            isOpen: !this.state.isOpen
-        });  
     }
 
     componentDidUpdate(){
@@ -29,38 +44,61 @@ class Menu extends React.Component {
         let after__header = document.querySelector('.after__header');
         let tasks = document.querySelectorAll('.tasks');
 
-        menu.style.display = this.state.isOpen? "block" : "none";
-        if(this.state.isOpen){
-            main.style.maxWidth = '83%';
-            main.style.marginLeft = '17%'
-            header.style.width='83%'
-            footer.style.marginLeft = '17%'
-            after__header.style.marginLeft = '17%'
-            for(let i=0; i<tasks.length; i++){
-                tasks[i].style.width = '90%'
+        // menu.style.display = this.props.isOpen? "block" : "none";
+           
+        if(window.innerWidth>990) {
+
+            if(this.props.isOpen) {
+                main.style.maxWidth = '83%';
+                main.style.marginLeft = '17%'
+                header.style.width='83%'
+                menu.style.width = '17%'
+                menu.style.padding = '0 20px'
+                footer.style.marginLeft = '17%'
+                after__header.style.marginLeft = '17%'
+                for(let i=0; i<tasks.length; i++){
+                    tasks[i].style.width = '90%'
+                }
+
+                // main.classList.add("animate__fadeInRightBig");
+                // main.classList.remove("animate__fadeInRightBig");
+                // menu.classList.remove("animate__fadeOutLeftBig")
+                // menu.classList.add("animate__fadeInLeftBig");
             }
-            menu.classList.remove("animate__fadeOutLeftBig")
-            menu.classList.add("animate__fadeInLeftBig");
-        }else{
-            main.style.maxWidth = '100%';
-            main.style.marginLeft = '0%'
-            header.style.width='100%'
-            footer.style.marginLeft = '0%'
-            after__header.style.marginLeft = '0%'
-            for(let i=0; i<tasks.length; i++){
-                tasks[i].style.width = '48%'
+
+            else{
+                main.style.maxWidth = '100%';
+                main.style.marginLeft = '0%'
+                header.style.width='100%'
+                footer.style.marginLeft = '0%'
+                after__header.style.marginLeft = '0%'
+                for(let i=0; i<tasks.length; i++){
+                    tasks[i].style.width = '48%'
+                }
+                menu.style.width = '0%'
+                menu.style.padding = 0
             }
-            menu.classList.remove("animate__fadeInLeftBig")
-            menu.classList.add("animate__fadeOutLeftBig");
+        }
+        else {
+            console.log('joha')
+
+            if(this.props.isOpen) {
+
+                
+            }
+
+            else{
+                menu.style.display = 'block'
+            }
         }
     }
 
     render() {
         return (
             <div className='d-flex menu mw-100'>
-              <div id='menu' className='aside animate__animated' style={{width: '17%'}}>
+              <div id='menu' className='aside animate__animated'>
                     <Form>
-                        <FormGroup className="mt-3 position-relative">
+                        <FormGroup className="mt-3 position-relative search-box">
                             <FormControl
                                 placeholder="Izlash..."
                                 className='px-2 search'
@@ -86,67 +124,8 @@ class Menu extends React.Component {
                         <h6 className='d-flex align-items-center hov'><svg className='menu-icons' xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20"><g><g><g><path className='svg' fill="#48526b" d="M14.067 9.133a.543.543 0 0 0-.904 0l-2.011 3.017h4.926z"/></g><g><path className='svg' fill="#48526b" d="M10.9 18.667c0 .3.243.544.543.544h1.665v-5.975H10.9z"/></g><g><path className='svg' fill="#48526b" d="M14.195 19.21h1.593c.3 0 .543-.243.543-.543v-5.431h-2.136z"/></g><g><path className='svg' fill="#48526b" d="M3.295 12.693h3.26v1.086h-3.26z"/></g><g><path className='svg' fill="#48526b" d="M15.788 4.002h-3.26a.543.543 0 0 1 0-1.086h3.26a.543.543 0 0 1 0 1.086zm-8.69 0a.543.543 0 1 1 0-1.086.543.543 0 0 1 0 1.086zm-2.173 0a.543.543 0 1 1 0-1.086.543.543 0 0 1 0 1.086zm-2.173 0a.543.543 0 1 1 0-1.086.543.543 0 0 1 0 1.086zM16.91.743H1.63C.73.743 0 1.474 0 2.373v2.716h18.54V2.373c0-.899-.731-1.63-1.63-1.63z"/></g><g><path className='svg' fill="#48526b" d="M2.209 12.15c0-.3.243-.544.543-.544h4.345c.3 0 .543.244.543.544v2.172c0 .3-.243.543-.543.543H2.752a.543.543 0 0 1-.543-.543zm.543-2.716h7.604a.543.543 0 0 1 0 1.086H2.752a.543.543 0 0 1 0-1.086zM0 15.409c0 .898.731 1.629 1.63 1.629h8.183v-4.345c0-.323.095-.636.274-.904 2.376-3.565 2.203-3.317 2.314-3.442H2.752a.543.543 0 0 1 0-1.086h9.777c.334 0 .595.302.534.64a1.627 1.627 0 0 1 1.908.629l2.173 3.259c.179.268.273.581.273.904v4.264a1.632 1.632 0 0 0 1.123-1.548V6.175H0z"/></g></g></g></svg>
                             <a href='#' className='w-100 menu__item'>BLOG</a>
                         </h6>
-
                     </div>
               </div>
-
-              <div id='main' className='main' style={{width: '83%', height: 'fit-content'}}>
-                   {/* HEADER */}
-                    <div id='header' className='header d-flex justify-content-between align-items-center bg-light'>
-                        <div className='header-item d-flex align-items-center'>
-                            <div className='burger-menu'>
-                                <a href='#' onClick={() => this.viewAside()} className='mx-2 nav-link burger'>
-                                 <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 23 18"><g><g><g><path className='burger__svg' fill="#303956" d="M1 2a1 1 0 0 1 0-2h21a1 1 0 0 1 0 2z"/></g><g><path className='burger__svg' fill="#303956" d="M1 10a1 1 0 0 1 0-2h21a1 1 0 0 1 0 2z"/></g><g><path className='burger__svg' fill="#303956" d="M1 18a1 1 0 0 1 0-2h21a1 1 0 0 1 0 2z"/></g></g></g></svg>
-                                </a>
-                            </div>
-                            <div className='header-nav-menu'>
-                                {/* <Router> */}
-                                    <NavLink to='/' activeClassName='nav-link__active' className='mx-1 nav-link'>IT AKADEMIYA</NavLink> 
-                                    <NavLink to='/repetitor' activeClassName='nav-link__active' className='mx-1 nav-link'>ONLAYN REPETITOR</NavLink> 
-                                    <NavLink to='/school' activeClassName='nav-link__active' className='mx-1 nav-link'>ONLAYN MAKTAB</NavLink> 
-                                {/* </Router> */}
-                            </div>
-                        </div>
-                        <div className='align-items-center header-nav-menu'>
-                            <div className='my-2 text-right'>
-                                <a href='#' className='mx-2' style={{cursor: 'pointer'}}>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 18 24"><g><g><g><path fill="#303956" d="M15.75 10.5a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-.75.75H2.25a.75.75 0 0 1-.75-.75v-10.5a.75.75 0 0 1 .75-.75zM18 21.75v-10.5C18 10.009 16.99 9 15.75 9H2.25A2.253 2.253 0 0 0 0 11.25v10.5C0 22.991 1.01 24 2.25 24h13.5c1.24 0 2.25-1.009 2.25-2.25z"/></g><g><path fill="#303956" d="M14.25 10.5a.75.75 0 0 1-.75-.75V6c0-2.481-2.019-4.5-4.5-4.5A4.505 4.505 0 0 0 4.5 6v3.75a.75.75 0 0 1-1.5 0V6c0-3.309 2.691-6 6-6s6 2.691 6 6v3.75a.75.75 0 0 1-.75.75z"/></g><g><path fill="#303956" d="M9.5 15a.5.5 0 1 1-1.002-.002A.5.5 0 0 1 9.5 15zm1.5 0c0-1.103-.897-2-2-2s-2 .897-2 2 .897 2 2 2 2-.897 2-2z"/></g><g><path fill="#303956" d="M9 20a.75.75 0 0 1-.75-.75V16.5a.75.75 0 0 1 1.5 0v2.75A.75.75 0 0 1 9 20z"/></g></g></g></svg>
-                                </a>
-                            </div>
-                            <div className='my-2'>
-                                <a href='/login' className='mx-2 nav-link avtoriz'>Avtorizatsiya</a>
-                            </div>
-                            <div className='my-2 text-right'>
-                                <a href='#' className='mx-2'>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29"><g><g><g><path fill="#f0f0f0" d="M.685 10.087A14.486 14.486 0 0 0 0 14.5c0 1.539.24 3.021.685 4.413l13.815.63 13.815-.63C28.76 17.521 29 16.04 29 14.5c0-1.539-.24-3.021-.685-4.413L14.5 9.457z"/></g><g><g><path fill="#d80027" d="M28.315 10.087L14.5 9.457l-13.815.63c-.132.413-.245.833-.34 1.26h28.31a14.414 14.414 0 0 0-.34-1.26z"/></g><g><path fill="#d80027" d="M.345 17.652c.095.428.208.848.34 1.261h.001l13.814.63 13.815-.63c.132-.413.245-.833.34-1.26z"/></g></g><g><path fill="#6da544" d="M14.5 29c6.47 0 11.948-4.237 13.815-10.087H.685C2.552 24.763 8.03 29 14.5 29z"/></g><g><path fill="#338af3" d="M14.5 0C8.03 0 2.552 4.237.685 10.087h27.63C26.448 4.237 20.97 0 14.5 0z"/></g><g><g><path fill="#f0f0f0" d="M6.626 5.99c0-1.359.955-2.493 2.23-2.772a2.837 2.837 0 1 0 0 5.542 2.838 2.838 0 0 1-2.23-2.77z"/></g><g><path fill="#f0f0f0" d="M10.532 7.279l.192.59h.622l-.503.366.192.591-.503-.365-.503.365.192-.59-.503-.366h.622z"/></g><g><path fill="#f0f0f0" d="M12.516 7.279l.192.59h.621l-.503.366.192.591-.502-.365-.503.365.192-.59-.503-.366h.622z"/></g><g><path fill="#f0f0f0" d="M14.5 7.279l.191.59h.622l-.503.366.192.591-.503-.365-.503.365.193-.59-.503-.366h.621z"/></g><g><path fill="#f0f0f0" d="M16.483 7.279l.192.59h.621l-.502.366.192.591-.503-.365-.503.365.192-.59-.503-.366h.622z"/></g><g><path  fill="#f0f0f0" d="M18.466 7.279l.193.59h.621l-.503.366.192.591-.503-.365-.502.365.192-.59-.503-.366h.621z"/></g><g><path  fill="#f0f0f0" d="M12.516 5.215l.192.591h.621l-.503.366.192.59-.502-.364-.503.365.192-.591-.503-.366h.622z"/></g><g><path fill="#f0f0f0" d="M14.5 5.215l.191.591h.622l-.503.366.192.59-.503-.364-.503.365.193-.591-.503-.366h.621z"/></g><g><path fill="#f0f0f0" d="M16.483 5.215l.192.591h.621l-.502.366.192.59-.503-.364-.503.365.192-.591-.503-.366h.622z"/></g><g><path fill="#f0f0f0" d="M18.466 5.215l.193.591h.621l-.503.366.192.59-.503-.364-.502.365.192-.591-.503-.366h.621z"/></g><g><path fill="#f0f0f0" d="M14.5 3.152l.191.591h.622l-.503.366.192.59-.503-.365-.503.366.193-.591-.503-.366h.621z"/></g><g><path fill="#f0f0f0" d="M16.483 3.152l.192.591h.621l-.502.366.192.59-.503-.365-.503.366.192-.591-.503-.366h.622z"/></g><g><path fill="#f0f0f0" d="M18.466 3.152l.193.591h.621l-.503.366.192.59-.503-.365-.502.366.192-.591-.503-.366h.621z"/></g></g></g></g></svg>
-                                </a>
-                            </div>
-                            
-                        </div>
-                    </div>
-
-                    {/* END HEADER */}
-
-                    
-                    {/* HOME PAGE -- IT AKADEMIYA 
-
-                    <div className='after__header bg-light'> 
-                        
-                        <Home />
-
-
-                    </div>
-
-                    */}
-
-                    {/* END HOME PAGE -- IT AKADEMIYA */}
-
-                    {/* FOOTER 
-                        <Footer />
-                    {/* END FOOTER */}
-
-              </div>
-
             </div>
         )
     }

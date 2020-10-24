@@ -58,6 +58,37 @@ a {
   border-radius:10px;
 }
 
+.profile-buttons{
+  height:43px;
+  line-height:43px;
+  border-radius:3px;
+  font-weight:500;
+  display:block;
+  background-color:#4f56f5;
+  text-align:center;
+  color:#fff;
+  margin-bottom:23px;
+  border:none;
+  text-transform:uppercase;
+  width:100%;
+
+  -webkit-transition:all .2s linear;
+  -moz-transition:all .2s linear;
+  -o-trsnsition:all .2s linear;
+}
+
+.profile-buttons:hover{
+  color:#fff !important;
+  background-color:#757CF5;
+}
+
+.panel-offsets{
+  margin-bottom:23px;
+  height:fit-content;
+  position:relative;
+  overflow:hidden;
+}
+
 .formHeader,
 .formFooter{
   text-align:center;
@@ -187,13 +218,38 @@ a {
   color:#999;
   cursor:pointer;
 }
+.panel>div{
+  background-color:#fff;
+  margin-bottom:17px;
+}
+
+.panel h1,
+.panel a{
+  text-transform:uppercase;
+}
+
+.panel h1{
+  text-align:center;
+  color:#303956;
+  padding:11px 0;
+  margin:0;
+  border-bottom:1px solid rgba(0, 0, 0, 0.11);
+  font-size:20px;
+  font-weight:300;  
+}
+
+.panel-content{
+  padding:16px 26px;
+}
+
 
 .col__gold {
   color: #FF8800;
 }
 
 .after__header{
-  margin-top: 6%;
+  transition: all .5s linear;
+  margin-top: 5.5%;
   margin-left: 17%;
 }
 
@@ -204,11 +260,15 @@ a {
 
 
 @media (min-width: 1661px) and (max-width: 2056px) {
-
+  .after__header {
+    margin-top: 3.7%;
+  }
 }
 
 @media (min-width: 1441px) and (max-width: 1660px) {
-
+  .after__header {
+    margin-top: 5%;
+  }
 }
 
 @media (min-width: 1367px) and (max-width: 1440px) {
@@ -221,12 +281,14 @@ a {
 }
 
 @media (max-width: 1200px) {
-  .slider {
-    flex-direction: column;
-  }
+
 }
 
 @media (max-width: 1150px) {
+
+  /* ASIDE */
+
+  
 
   /* IT AKADEMIYA */
 
@@ -248,6 +310,23 @@ a {
     margin: 10px;
   }
 
+  .course__item {
+    width: 40%;
+  }
+
+  .form-group, .check__certif__btn {
+    width: 48%;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .certificate-item__img {
+    width: 100%;
+    height: 500px;
+  }
+
   /* IT AKADEMIYA */
 
 
@@ -264,16 +343,40 @@ a {
   .tasks {
     width: 100% !important;
   }
+
+  /* IT AKADEMIYA */
+
+  .achievements-item {
+    width: 45%;
+  }
+  
+  /* IT AKADEMIYA */
 }
 
 @media (max-width: 990px) {
 
-  /* IT AKADEMIYA */
+  /* ASIDE */
 
-  .course__item {
+  .aside {
+    display: none;
     width: 40%;
+    padding: 6px 20px;
   }
 
+  /* HEADER */
+
+  .main, .header {
+    width: 100%;
+  }
+
+  .after__header {
+    margin-left: 0;
+  }
+  /* IT AKADEMIYA */
+
+  .certificate__item:last-child {
+    margin-bottom: 0;
+  }
   /* IT AKADEMIYA */
 
 
@@ -294,6 +397,12 @@ a {
   }
 
   /* ONLINE REPETITOR */
+
+  /* FOOTER */
+
+  .footer {
+    margin-left: 0;
+  }
 
 
 }
@@ -363,6 +472,7 @@ a {
       }
 
       .sponsors-item {
+        text-align: center;
         width: 45%;
       }
 
@@ -390,7 +500,32 @@ a {
     /* SCHOOL STYLES */
 
     .footer__item {
-      width: 80%;
+      width: 100%;
+    }
+
+    .footer__text:last-child {
+      text-align: right;
+    }
+
+    .footer__social {
+      width: 100%;
+      justify-content: flex-end;
+    }
+
+    /* PROFILE STYLES */
+
+    .profile{
+      flex-direction:column-reverse;
+    }
+
+    .user-panel{
+      width:80%;
+      margin:0 auto;
+      border:none;
+    }
+
+    .panel-offsets img{
+      height:300px;
     }
 }
 
@@ -408,10 +543,6 @@ a {
 @media (max-width: 690px) {
   .subjects__item {
     width: 195px;
-  }
-
-  .menu-icons {
-    display: none;
   }
 
   /* ONLAY REPETITOR */
@@ -432,38 +563,37 @@ a {
 }
 
 @media (max-width: 550px) {
-  .aside {
-    padding: 2px;
-  }
-
-  .search-btn {
-    top: 38px !important;
-    right: 27% !important;
-  }
-
-  
-
-  .menu__text {
-    font-size: 14px;
-  }
-
-  .menu__item {
-    margin-left: 0px;
-    font-size: 13px;
-  }
 
   /* IT AKADEMIYA */
+
 
   .course__item {
     width: 100%;
   }
 
+  .certificate__form {
+    flex-wrap: wrap;
+  }
+
   .certificate-item__img {
+    height: 350px;
+  }
+
+  .form-group {
     width: 100%;
   }
 
-  .certificate__form {
-    flex-wrap: wrap;
+  .check__certif__btn {
+    width: 100%;
+  }
+
+  .sponsors {
+    padding-bottom: 10px !important;
+  }
+
+  .sponsors-item {
+    width: 100%;
+    margin-bottom: 15px !important;
   }
 
   /* IT AKADEMIYA */
@@ -479,6 +609,17 @@ a {
 }
 
 @media (max-width: 480px) {
+
+  /* ASIDE */
+
+  .aside {
+    padding: 0px 6px;
+  }
+
+  .menu__item {
+    margin-left: 6px;
+  }
+
   /* ONLAYN REPETITOR */
 
   .advice-main {
@@ -494,7 +635,11 @@ a {
 
   }
 
-  .menu__item {
-    font-size: 12px;
+  /* IT AKADEMIYA */
+
+  .certificate-item__img {
+    height: 250px;
   }
+
+  /* IT AKADEMIYA */
 }

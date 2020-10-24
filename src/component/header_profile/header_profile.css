@@ -1,6 +1,11 @@
 .header-profile {
     padding: 12px 17px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+    position:fixed;
+    z-index: 3;
+    width: 83% !important;
+    right: 0;
+    top: 0;
 }
 
 .header-profile__progress-img {

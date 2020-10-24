@@ -20,11 +20,6 @@ const successElements = [
     text:"Bilim olishingizga ishonch hosil qiling va sizni qiziqtirgan kelajak kasbingizni egalang",
   },
   {
-    id:3,
-    title:"Bilimlar manbai",
-    text:"Kurslar davomida bilimlaringizni oshirib boring va hech nimadan qo'rqmay marraga chiqing",
-  },
-  {
     id:4,
     title:"Onlayn testlar",
     text:"O'quv kurslari so'ngida bilimlaringizni tekshirib boring",

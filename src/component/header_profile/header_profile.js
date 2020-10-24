@@ -9,7 +9,7 @@ import user from '../../img/user.jpg'
 class HeaderProfile extends React.Component {
     render () {
         return  (
-            <div className='header-profile d-flex w-100 justify-content-between bg-light align-items-center'>
+            <div className='header-profile d-flex justify-content-between bg-light align-items-center'>
                 <div className='header-profile__progress d-flex justify-content-between align-items-center'>
                     <div className='header-profile__progress-img mr-2'>
                         <img 

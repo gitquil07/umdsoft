@@ -1,0 +1,42 @@
+.active {
+    border: none;
+    outline: none;
+}
+.active:active{
+    border: none;
+    outline: none;
+}
+.pageLinkClassName{
+    font-weight: 500;
+    padding: 10px;
+    margin: 0 10px;
+    color: #000;
+    transform: scale(1.4) translateY(-8px);
+}
+
+.pageLinkClassName:focus, .previousLinkClassName:focus, .nextLinkClassName:focus, .breakLinkClassName:focus {
+    outline: none;
+}
+.activeLink{
+    display: inline-block;
+    color: #3174AF ;
+    border: none;
+    outline: none;
+    cursor: default !important;
+}
+.activeLink:active{
+    border: none;
+    outline: none;
+}
+.containerClassName{
+    margin-top: 20px;
+    justify-content: center;
+}
+.nextLinkClassName{
+    font-weight: 900;
+    color: #000;
+}
+.previousLinkClassName{
+    font-weight: 900;
+    color: #000;
+}

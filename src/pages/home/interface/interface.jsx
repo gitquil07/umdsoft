@@ -56,8 +56,8 @@ const Slider = () => {
 
   const toDefault = (indicators) => {
     indicators.forEach(indicator => {
-      if(indicator.classList.contains('active')){
-        indicator.classList.remove('active');
+      if(indicator.classList.contains('actiVe')){
+        indicator.classList.remove('actiVe');
       }
     });
   }
@@ -65,7 +65,7 @@ const Slider = () => {
   const activateIndicator = (indicators, current) => {
     indicators.forEach(indicator => {
       if(indicator == current){
-        indicator.classList.add('active');
+        indicator.classList.add('actiVe');
       }
     });
   }

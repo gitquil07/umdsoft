@@ -19,8 +19,8 @@ class OnlineRep extends React.Component{
       <>
         <Banner title="Talaba bo'lishni istaysizmi? Success onlayn repetiror ko'maklashadi." text="Hozirgi kunda talaba bo'lishni istayotgan yoshlar soni ortib bormaqda. Karantin sababli o'quv markazlari yopilgan lekin bundan xovotir olmasangiz bo'ladi. Biz sizga ko'maklashamiz. Succes onlayn repetitor platformasi orqali barchasi juda oson." />
         <Container>
-          <Success />
           <Courses />
+          <Success />
           <Advices />
           <ItemContainer title="Bitiruvchi fikri">
             <Feedback/>

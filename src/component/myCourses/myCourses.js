@@ -22,11 +22,11 @@ class MyCourses extends React.Component {
                                 <h1 className='myCourses-title'>FRONT END DARSLARI</h1>
                                 <div className='myCourses-tags d-flex justify-content-center'>
                                     <div className='myCourses-tags-container'>
-                                        <span className='myCourses-tag-icon mr-2'><i class="far fa-clock"></i></span>
+                                        <span className='myCourses-tag-icon mr-2'><i className="far fa-clock"></i></span>
                                         <span className='myCourses-tag-text'>320 soat</span>
                                     </div>
                                     <div className='myCourses-tags-container'>
-                                        <span className='myCourses-tag-icon mr-2'><i class="far fa-file-video"></i></span>
+                                        <span className='myCourses-tag-icon mr-2'><i className="far fa-file-video"></i></span>
                                         <span className='myCourses-tag-text'>60 dars</span>
                                     </div>
                                 </div>
@@ -65,11 +65,11 @@ class MyCourses extends React.Component {
                                 <h1 className='myCourses-title'>FRONT END DARSLARI</h1>
                                 <div className='myCourses-tags d-flex justify-content-center'>
                                     <div className='myCourses-tags-container'>
-                                        <span className='myCourses-tag-icon mr-2'><i class="far fa-clock"></i></span>
+                                        <span className='myCourses-tag-icon mr-2'><i className="far fa-clock"></i></span>
                                         <span className='myCourses-tag-text'>320 soat</span>
                                     </div>
                                     <div className='myCourses-tags-container'>
-                                        <span className='myCourses-tag-icon mr-2'><i class="far fa-file-video"></i></span>
+                                        <span className='myCourses-tag-icon mr-2'><i className="far fa-file-video"></i></span>
                                         <span className='myCourses-tag-text'>60 dars</span>
                                     </div>
                                 </div>
@@ -108,11 +108,11 @@ class MyCourses extends React.Component {
                                 <h1 className='myCourses-title'>FRONT END DARSLARI</h1>
                                 <div className='myCourses-tags d-flex justify-content-center'>
                                     <div className='myCourses-tags-container'>
-                                        <span className='myCourses-tag-icon mr-2'><i class="far fa-clock"></i></span>
+                                        <span className='myCourses-tag-icon mr-2'><i className="far fa-clock"></i></span>
                                         <span className='myCourses-tag-text'>320 soat</span>
                                     </div>
                                     <div className='myCourses-tags-container'>
-                                        <span className='myCourses-tag-icon mr-2'><i class="far fa-file-video"></i></span>
+                                        <span className='myCourses-tag-icon mr-2'><i className="far fa-file-video"></i></span>
                                         <span className='myCourses-tag-text'>60 dars</span>
                                     </div>
                                 </div>
