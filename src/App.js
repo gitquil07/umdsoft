@@ -12,6 +12,8 @@ import { Footer } from './component'
 import { HeaderProfile } from './component'
 import './style.css';
 import { Profile } from './pages';
+import { Blog } from './pages';
+
 // import Registration from './pages/registration/registration';
 
 function App() {
@@ -27,7 +29,8 @@ function App() {
           <Switch>
               {/* <Route exact path="/" component={Home} />
               <Route exact path="/repetitor" component={OnlineRep} /> */}
-              <Route exact path="/profile" component={Profile} />
+              {/* <Route exact path="/profile" component={Profile} /> */}
+              <Route exact path="/blog" component={Blog} />
               {/* <Route exact path="/profile" component={Profile} /> */}
               {/* <Route exact path="/school" component={OnlineSchool} />
               <Route exact path="/forgotPswd" component={ForgotPassword} /> 
