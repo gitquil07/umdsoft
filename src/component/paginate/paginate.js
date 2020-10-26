@@ -76,7 +76,7 @@ export class ForumPaginate extends Component {
           nextLinkClassName ={'nextLinkClassName'}
           previousLinkClassName ={'previousLinkClassName'}
           breakLinkClassName={'breakLinkClassName'}
-          initialPage={7}
+          initialPage={0}
         />
       </div>
     );

@@ -3,6 +3,7 @@ import {Link, Route} from 'react-router-dom'
 import { ForumPaginate } from '../../component/paginate/paginate'
 import './forum.css'
 import forumGroup from './forumGroup/forumGroup'
+import ForumStars from './forumStars/forumStars'
 
 class Forum extends React.Component {
     render(){
@@ -48,9 +49,11 @@ class Forum extends React.Component {
 
                         </div>
 
+                        <ForumStars />
+                        
                         <div className='advertisement'>
                             <img 
-                                src='https://via.placeholder.com/300x600'
+                                src='https://via.placeholder.com/300x350'
                             />
                         </div>
                     </div>

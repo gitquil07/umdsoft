@@ -43,6 +43,7 @@ class Menu extends React.Component {
         let footer = document.querySelector('#footer');
         let after__header = document.querySelector('.after__header');
         let tasks = document.querySelectorAll('.tasks');
+        let contAside = document.querySelector('#contAside');
 
         // menu.style.display = this.props.isOpen? "block" : "none";
            
@@ -52,8 +53,9 @@ class Menu extends React.Component {
                 main.style.maxWidth = '83%';
                 main.style.marginLeft = '17%'
                 header.style.width='83%'
-                menu.style.width = '17%'
-                menu.style.padding = '0 20px'
+                // menu.style.width = '17%'
+                // menu.style.padding = '0 20px'
+                menu.style.transform = "translateX(0)"
                 footer.style.marginLeft = '17%'
                 after__header.style.marginLeft = '17%'
                 for(let i=0; i<tasks.length; i++){
@@ -75,20 +77,22 @@ class Menu extends React.Component {
                 for(let i=0; i<tasks.length; i++){
                     tasks[i].style.width = '48%'
                 }
-                menu.style.width = '0%'
-                menu.style.padding = 0
+                // menu.style.width = '0%'
+                // menu.style.padding = 0
+                menu.style.transform = "translateX(-100%)"
             }
         }
         else {
-            console.log('joha')
-
             if(this.props.isOpen) {
-
-                
+                menu.style.transform = 'translateX(-100%)'
+                contAside.style.display = 'none';
+                document.body.style.overflowY = "scroll";
             }
 
             else{
-                menu.style.display = 'block'
+                menu.style.transform= 'translateX(0)'
+                contAside.style.display = 'block'
+                document.body.style.overflowY = "hidden";
             }
         }
     }
@@ -126,6 +130,8 @@ class Menu extends React.Component {
                         </h6>
                     </div>
               </div>
+
+              
             </div>
         )
     }

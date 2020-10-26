@@ -39,6 +39,10 @@ const Header = ({viewAside}) => {
                 </div>
             </div>
 
+            <div id='contAside' className='contAside' onClick={viewAside}>
+                  nothingn there
+            </div>
+
         </div>
     );
 }

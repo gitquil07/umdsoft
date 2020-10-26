@@ -2,7 +2,7 @@
     width: 83%;
     margin-left: 17%;
     height: fit-content;
-    transition: all .5s linear;
+    transition: all .2s linear;
 }
 
 .header {
@@ -11,7 +11,7 @@
     width: 83%;
     z-index: 2;
     right: 0;
-    transition: all .5s linear;
+    transition: all .2s linear;
 }
 
 .header-nav-menu {
