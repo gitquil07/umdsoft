@@ -4,7 +4,7 @@ import { ForumPaginate } from '../../component/paginate/paginate'
 import './forum.css'
 import forumGroup from './forumGroup/forumGroup'
 import ForumStars from './forumStars/forumStars'
-
+import ForumAnswerBlock from "./forumAnswerBlock/forumAnswerBlock";
 class Forum extends React.Component {
     render(){
         return(
@@ -12,7 +12,8 @@ class Forum extends React.Component {
                 <div className='forum container d-flex justify-content-between'>
 
                     <div id='paginate-root' className='forum-aside'>
-                        <ForumPaginate/>
+                        {/*<ForumPaginate/>*/}
+                        <ForumAnswerBlock />
                     </div> {/*forum-aside */}
 
 

@@ -1,8 +1,10 @@
-a {
+a ,button{
   text-decoration: none !important;
   transition: all .2s linear;
 }
-
+button:focus{
+  outline: none;
+}
 .bg__blue {
   background-color: #4f56f5;
 }

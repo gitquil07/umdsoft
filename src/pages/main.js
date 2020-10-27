@@ -10,7 +10,7 @@ import Forum from "./forum/forum";
 
 const Main = () => {
   let {url, path} = useRouteMatch();
-  let [isOpen, setIsOpen] = React.useState(true)
+  let [isOpen, setIsOpen] = React.useState(true);
   const viewAside = () => {
     setIsOpen(!isOpen);
   }
