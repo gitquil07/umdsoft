@@ -5,6 +5,7 @@ import './forum.css'
 import forumGroup from './forumGroup/forumGroup'
 import ForumStars from './forumStars/forumStars'
 import ForumAnswerBlock from "./forumAnswerBlock/forumAnswerBlock";
+import ForumSetAnswer from "./forumSetAnswer/forumSetAnswer";
 class Forum extends React.Component {
     render(){
         return(
@@ -12,8 +13,9 @@ class Forum extends React.Component {
                 <div className='forum container d-flex justify-content-between'>
 
                     <div id='paginate-root' className='forum-aside'>
-                        {/*<ForumPaginate/>*/}
+                        <ForumPaginate/>
                         <ForumAnswerBlock />
+                        <ForumSetAnswer />
                     </div> {/*forum-aside */}
 
 
@@ -51,9 +53,9 @@ class Forum extends React.Component {
                         </div>
 
                         <ForumStars />
-                        
+
                         <div className='advertisement'>
-                            <img 
+                            <img
                                 src='https://via.placeholder.com/300x350'
                             />
                         </div>

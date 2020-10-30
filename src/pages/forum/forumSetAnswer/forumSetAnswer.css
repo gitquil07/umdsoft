@@ -1,0 +1,17 @@
+.sendButton{
+    margin: 0 auto;
+    align-items: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #989BF7;
+    color: white;
+}
+.sendButton:hover{
+    box-shadow: 0 0 5px 5px #dddddd;
+}
+.forumSetAnswer-h3{
+    color: #3174AF;
+}
