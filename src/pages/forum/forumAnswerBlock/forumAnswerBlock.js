@@ -2,6 +2,8 @@ import React, {Component,useState} from 'react';
 import './forumAnswerBlock.css'
 import EditorTiny from "../../editorTiny/editorTiny";
 import ForumAnswer  from './forumAnswer/forumAnswer'
+
+
 function ForumAnswerBlock() {
 
     const [viewEditor,setViewEditor] =useState(false);
@@ -42,7 +44,9 @@ function ForumAnswerBlock() {
             </div>
 
             <div className={`editorTiny ${(viewEditor) ? 'editorTiny--active' : ""}`}>
-                <EditorTiny/>
+
+                <EditorTiny />
+
                 <div className='row mt-2 d-flex justify-content-between'>
                     <div className='col-md-9 d-flex align-items-baseline'>
                         <input type="checkbox"/>
@@ -50,7 +54,7 @@ function ForumAnswerBlock() {
                             (<span>test@gmail.com</span>) yuborilsin</p>
                     </div>
                     <div className='col-md-3 text-right'>
-                        <button className='forum-answer-block-btn'>
+                        <button className='forum-answer-block-btn' >
                             <p className='m-0'><i className="fas fa-comment-alt"></i> &nbsp;Javob berish</p>
                         </button>
                     </div>
@@ -59,7 +63,8 @@ function ForumAnswerBlock() {
             </div>
             <h3 className='forum-answer-header-title'>Javoblar</h3>
             <div className='forum-answer-comments'>
-                <ForumAnswer id={1} description="Assalomu alaykum! Savol shundan iborat ki java dasturida q'anday q'ilib dfb faillariga
+                
+                <ForumAnswer id={3} description="Assalomu alaykum! Savol shundan iborat ki java dasturida q'anday q'ilib dfb faillariga
                             malumotni kiritish mumkin."/>
                 <ForumAnswer id={2} description="Assalomu alaykum! Savol shundan iborat ki java dasturida q'anday q'ilib dfb faillariga
                             malumotni kiritish mumkin. Assalomu alaykum! Savol shundan iborat ki java dasturida q'anday q'ilib dfb faillariga
@@ -68,7 +73,7 @@ function ForumAnswerBlock() {
                             malumotni kiritish mumkin.Assalomu alaykum! Savol shundan iborat ki java dasturida q'anday q'ilib dfb faillariga
                             malumotni kiritish mumkin.Assalomu alaykum! Savol shundan iborat ki java dasturida q'anday q'ilib dfb faillariga
                             malumotni kiritish mumkin"/>
-                <ForumAnswer id={3} description="Vaalekum Assalom, yaxshi malades, huddi wundo davom ettrvur"/>
+                <ForumAnswer id={1} description="Vaalekum Assalom, yaxshi malades, huddi wundo davom ettrvur"/>
             </div>
 
 

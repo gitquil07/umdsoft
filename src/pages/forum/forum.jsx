@@ -12,12 +12,18 @@ class Forum extends React.Component {
                 <div className='forum container d-flex justify-content-between'>
 
                     <div id='paginate-root' className='forum-aside'>
-                        {/*<ForumPaginate/>*/}
+                        {/* <ForumPaginate/> */}
                         <ForumAnswerBlock />
                     </div> {/*forum-aside */}
 
 
                     <div className='forum-rside mb-3'>
+                        <div className='forum-group-add'>
+                            <button className='form-group-add-btn'>
+                                <span className=''>Savol berish</span>
+                                <span className=''>+</span>
+                            </button>
+                        </div>
                         <div className='forum-nav bg-white'>
                             <h5>Barcha sahifalar</h5>
                             <div className='forum-nav-block my-2'>

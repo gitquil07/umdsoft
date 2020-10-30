@@ -5,13 +5,13 @@ class ForumAnswer extends Component {
     render() {
         let {id, description} = this.props
         return (
-            <div className='bg-white m-3 p-3'>
+            <div className='bg-white my-3 p-2'>
                 <div className="row">
-                    <div className="col-md-2 overflow-hidden text-center p-0">
+                    <div className="col-md-2 forum-answer-aside">
                         <img className='forum-answer-img' width='100px' src={User} alt=""/>
                     </div>
-                    <div className="col-md-10">
-                        <p>{description}</p>
+                    <div className="col-md-10 forum-answer-rside">
+                        <p className='forum-answer-rside-description'>{description}</p>
                         <div className='forum-answer-rating'>
                             <i className="fas fa-star col__gold"></i>
                             <i className="fas fa-star col__gold"></i>
