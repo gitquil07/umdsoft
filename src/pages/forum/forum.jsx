@@ -20,6 +20,12 @@ class Forum extends React.Component {
 
 
                     <div className='forum-rside mb-3'>
+                        <div className='forum-group-add'>
+                            <button className='form-group-add-btn'>
+                                <span className=''>Savol berish</span>
+                                <span className=''>+</span>
+                            </button>
+                        </div>
                         <div className='forum-nav bg-white'>
                             <h5>Barcha sahifalar</h5>
                             <div className='forum-nav-block my-2'>

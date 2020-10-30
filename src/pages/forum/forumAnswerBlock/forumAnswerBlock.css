@@ -77,7 +77,3 @@
 .editorTiny--active{
     height: 100%;
 }
-
-.tox-tinymce-aux, .tox-statusbar__branding {
-    display: none;
-}
