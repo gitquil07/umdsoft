@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import ItemContainer from '../../../component/itemContainer/itemContainer'
 import './courses.css'
 
@@ -7,14 +7,45 @@ import mobile from '../../../img/mobile.svg'
 import desctop from '../../../img/desctop.svg'
 import python from '../../../img/python.svg'
 
-class Courses extends React.Component {
-    render() {
+function Courses() {
+
+
+    // function heartClicked () {
+        
+    //     let state = document.getElementsByClassName('fa-heart')
+    //     console.log(state)
+    //     console.log(state[0])
+
+    //     if(state[0].className === 'fas fa-heart col__green'){
+    //         console.log('yes')
+    //         state[0].className = 'far fa-heart col__green'
+    //         console.log(state[0])
+    //     }
+    //     else{
+    //         console.log('no')
+    //     }
+    // }
+
+
+
+    // function heartSet(props) {
+    //     const [states, setStates] = useState(0)
+
+    //     useEffect(() => {
+            
+    //         if(props.heart.className == 'fas fa-heart col__green')
+    //         {
+    //             props.heart.className = 'far fa-heart col__green'
+    //         }
+    //     })
+    // }
+
         return ( 
             <div className='mb-5'>
                 <ItemContainer title='Bizning kurslarimiz'>
-                    <div className='d-flex justify-content-between'>
+                    <div className='d-flex justify-content-between course-items'>
                         <div className='course__item border'>
-                            <a href='#'>
+                            <a>
                                 <div className='d-flex justify-content-between h-50 bg__blue' style={{borderTopLeftRadius: '5px', borderTopRightRadius: '5px'}}>
                                     <img 
                                         src={web}
@@ -51,7 +82,7 @@ class Courses extends React.Component {
                         </div>
 
                         <div className='course__item border'>
-                            <a href='#'>
+                            <a>
                                 <div className='d-flex justify-content-between h-50 bg__blue'
                                     style={{borderTopLeftRadius: '5px', borderTopRightRadius: '5px'}}>
                                     <img src={mobile} className='course__img' />
@@ -165,7 +196,6 @@ class Courses extends React.Component {
                 </ItemContainer>
             </div>
         ) 
-    }
 }
 
 export default Courses

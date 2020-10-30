@@ -1,0 +1,12 @@
+.forum-stars {
+    transition: all .2s linear;
+}
+
+.forum-stars:hover {
+    box-shadow: 0 0 5px #aaa;
+    color: #303956 !important;
+}
+
+.forum-stars__link-title:hover {
+    color: #303956 !important;
+}

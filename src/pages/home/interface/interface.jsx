@@ -72,7 +72,6 @@ const Slider = () => {
 
   // Handlers next 
   const next = (e) => {
-    console.log(e);
     e.preventDefault();
     if(currentSlide < MAX_LENGTH){
       setCurrentSlide(currentSlide + 1);

@@ -1,0 +1,61 @@
+.main {
+    width: 83%;
+    margin-left: 17%;
+    height: fit-content;
+    transition: all .2s linear;
+}
+
+.header {
+    padding: 16px 5px;
+    position: fixed;
+    width: 83%;
+    z-index: 2;
+    right: 0;
+    transition: all .2s linear;
+}
+
+.header-nav-menu {
+    display: flex;
+}
+.burger {
+    padding: 4px 10px !important;
+    padding-bottom: 8px !important;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.burger:hover .burger__svg {
+    fill: #fff;
+}
+
+.burger:hover {
+    background-color: #303956;
+}
+
+.nav-link {
+    width: fit-content;
+    font-size: 14px;
+    font-weight: 700;
+    color:#BFBFBF !important;
+
+} 
+ 
+.nav-link:hover {
+    color: #303956 !important ;
+}
+
+.nav-link__active {
+    color: #303956 !important ;
+}
+
+.avtoriz {
+    color: #303956 !important;
+    padding: 5px 10px !important;
+    border: 1px solid !important;
+    border-radius: 5px;
+}
+
+.avtoriz:hover {
+    color: #fff !important;
+    background-color: #303956;
+}

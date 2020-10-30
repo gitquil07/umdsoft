@@ -105,6 +105,15 @@
   visibility:visible;
 }
 
+.rate{
+  line-height:22px;
+}
+
+.rate span{
+  font-size:20px;
+  font-weight:600;
+}
+
 
 /* Animating */
 
@@ -141,6 +150,36 @@
   animation-name: fadeOutFeedback;
   animation-duration:1s;
   animation-timing-function:linear;
+}
+
+@keyframes fadeInRate{
+  from{
+    visibility:hidden;
+  }
+  to{
+    visibility:visible;
+  }
+}
+@keyframes fadeOutRate{
+  from{
+    visibility:visible;
+  }
+  to{
+    visibility:hidden
+  }
+}
+
+.fadeInRate{
+  animation-name: fadeInRate;
+  animation-fill-mode:forwards;
+  animation-timing-function:linear;
+  animation-delay:1.3s;
+}
+
+.fadeOutRate{
+  animation-name: fadeOutRate;
+  animation-duration:.1s;
+  animation-timing-function:ease-in-out;
 }
 
 

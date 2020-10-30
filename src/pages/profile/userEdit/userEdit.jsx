@@ -55,7 +55,7 @@ const UserEdit = ({avatar, username}) => {
               sifatida ishlatiladi
             </div>
             </div>
-          </div>
+          </div>  
         </div>
       <button className="profile-buttons">o'zgartirish</button>
       </form>
