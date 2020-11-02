@@ -6,7 +6,7 @@ import ForumAnswer  from './forumAnswer/forumAnswer'
 
 function ForumAnswerBlock() {
 
-    const [viewEditor,setViewEditor] =useState(false);
+    const [viewEditor,setViewEditor] = useState(false);
 
     return (
         <div className='px-3'>

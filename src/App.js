@@ -6,7 +6,7 @@ import { Login } from './pages';
 import { ForgotPassword } from './pages';
 import Main from './pages/main';
 import './style.css';
-
+import NodeJs from './pages/nodeJs/nodeJs'
 function App() {
   return (
       <div>
@@ -23,8 +23,10 @@ function App() {
               <Route exact path="/profile" component={Main} />
               <Route exact path="/blog" component={Main} />
               <Route exact path="/forum" component={Main} />
+              <Route exact path="/nodejs" component={NodeJs}/>
           </Switch>
-        </Router> 
+        </Router>
+
       </div>
   );
 }
