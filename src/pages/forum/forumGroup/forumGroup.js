@@ -15,6 +15,15 @@ function forumGroup ({id, title}) {
                     <div className='forum-group__main'>
                         {/* <h5 className='forum-group__main-title'>CSS stillarini qo'llayotkanda xatoliklar bo'ldi, nima qilay? </h5> */}
                         <h5 className='forum-group__main-title'>{id} {title}</h5>
+                        <div className='forum-group-rating'>
+                            <i className="fas fa-star col__gold"></i>
+                            <i className="fas fa-star col__gold"></i>
+                            <i className="fas fa-star col__gold"></i>
+                            <i className="fas fa-star col__gold"></i>
+                            <i className="far fa-star col__gold"></i>
+                            &nbsp;
+                            <span><span>4</span>/5</span>
+                        </div>
                         <div className='forum-group__main-comments'>
                             <span className='forum-group__main-comments-count'>10</span>ta kommentlar
                         </div>

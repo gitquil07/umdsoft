@@ -1,31 +1,75 @@
-import React from 'react';
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import React, {useEffect} from 'react';
+import {BrowserRouter as Router, Switch, Route, useParams} from "react-router-dom";
 
-import { Registration } from './pages/index';
+import { Menu, HeaderProfile, Header, Footer } from "./component";
+import { Registration } from './pages/';
 import { Login } from './pages';
 import { ForgotPassword } from './pages';
-import Main from './pages/main';
+import { OnlineRep } from "./pages";
+import { OnlineSchool } from "./pages";
+import { Profile } from "./pages";
+import { Home } from "./pages";
+import { Forum } from "./pages";
+import { Blog } from "./pages";
 import './style.css';
 
 function App() {
-  return (
-      <div>
-        <Router>
-          <Switch>
-              <Route exact path="/forgotPswd" component={ForgotPassword} /> 
-              <Route exact path="/login" component={Login} /> 
-              <Route exact path="/registration" component={Registration} />
 
-              {/* <Route path="/:page" component={Main} /> */}
-              <Route exact path="/" component={Main} />
-              <Route exact path="/tutor" component={Main} />
-              <Route exact path="/school" component={Main} />
-              <Route exact path="/profile" component={Main} />
-              <Route exact path="/blog" component={Main} />
-              <Route exact path="/forum" component={Main} />
-          </Switch>
-        </Router> 
-      </div>
+  let [isOpen, setIsOpen] = React.useState(true);
+
+  const isDisplay = (path) => {
+    if(path != 'forgotPswd' && path != 'login' && path != 'registration'){
+      return true;
+    }
+
+    return false;
+  }
+
+  const viewAside = () => {
+    setIsOpen(!isOpen);
+  }
+  
+
+  return (
+    <Router>
+      <Route path="/forgotPswd" component={ForgotPassword} /> 
+      <Route path="/login" component={Login} /> 
+      <Route path="/registration" component={Registration} />
+
+      <Route path="/:page?" render={props => {
+          let page = (!props.match.params.page)? "home" : props.match.params.page;
+          
+          if(isDisplay(page)){
+            console.log(isOpen);
+            return <>
+              <Menu isOpen={isOpen} />
+              {(page !== "/profile")? <Header viewAside={viewAside} /> :  <HeaderProfile viewAside={viewAside} />}
+            </>
+          }else{
+            return "";
+          }
+      }} />
+      
+        <div className='after__header bg-light'>
+          <Route exact path="/" component={Home} />
+          <Route path="/tutor" component={OnlineRep} />
+          <Route path="/school" component={OnlineSchool} />
+          <Route path="/profile" component={Profile} />
+          <Route path="/forum" component={Forum} />
+          <Route path="/blog" component={Blog} />
+        </div>
+      
+      <Route path="/:page?" render={props => {
+        let page = (!props.match.params.page)? "home" : props.match.params.page;
+        if(isDisplay(page)){
+          return <>
+            <Footer />
+          </>
+        }else{
+          return "";
+        }
+      }}/>
+    </Router> 
   );
 }
 

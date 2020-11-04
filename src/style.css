@@ -1,11 +1,10 @@
-a {
+a ,button{
   text-decoration: none !important;
   transition: all .2s linear;
 }
 
-button:focus {
-  border:none;
-  outline: none !important;
+button:focus{
+  outline: none;
 }
 
 .bg__blue {
@@ -55,9 +54,25 @@ button:focus {
   padding: 0 !important;
 }
 
+.modalReg{
+  background-image:url(../src/img/reg.jpg);
+  background-size:cover;
+  background-color:#4f56f5;
+  background-blend-mode:soft-light;
+  height:100%;
+  width:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+
 .regWrapper{
-  max-width:425px;
-  margin:83px auto;
+  width:370px;
+  margin:1px auto 0 auto;
+  line-height:100%;
   background-color:#fff;
   border:1px solid rgba(0, 0, 0, 0.08);
   border-radius:10px;
@@ -247,6 +262,13 @@ button:focus {
   padding:16px 26px;
 }
 
+.fa-eye__grey{
+  color:#CACACA;
+}
+
+.fa-eye__grey:hover{
+  color:#a7a6a6;
+}
 
 .col__gold {
   color: #FF8800;
@@ -566,6 +588,32 @@ button:focus {
     }
 }
 
+@media(min-width:768px) and (max-width:1024px){
+/* 
+  .modalReg{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  } */
+
+  /* .regWrapper{
+    width:50%;
+  } */
+
+  /* .formHeader,
+  .formFooter{
+    height:80px;
+    line-height:80px;
+  }
+
+  .inputs,
+  .subBtn{
+    height:55px;
+  } */
+
+  
+}
+
 @media (max-width: 730px) {
   .tasks {
     flex-wrap: wrap;
@@ -668,6 +716,17 @@ button:focus {
 @media (max-width: 480px) {
 
   /* ASIDE */
+
+  .modalReg{
+    background:none;
+    background-color:#fff;
+  }
+
+  .regWrapper{
+    margin-top:40px;
+    width:100%;
+    border:none;
+  }
 
   .aside {
     width: 70%;
