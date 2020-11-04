@@ -12,7 +12,7 @@ import { Home } from "./pages";
 import { Forum } from "./pages";
 import { Blog } from "./pages";
 import './style.css';
-
+import NodeJs from './pages/nodeJs/nodeJs'
 function App() {
 
   let [isOpen, setIsOpen] = React.useState(true);
