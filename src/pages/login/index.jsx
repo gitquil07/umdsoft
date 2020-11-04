@@ -6,6 +6,8 @@ const Login = () => {
   let [phoneNumber, setPhoneNumber] = useState("");
   let [password, setPassword] = useState("");
   let [errorReg, setErrorReg] = useState("");
+  
+  let [toggle, setToggle] = useState(false);
 
 
   const handleSubmit = async (e) =>  {
@@ -30,40 +32,43 @@ const Login = () => {
   }
 
   return(
-    <div className="regWrapper">
-      <h1 className="formHeader">Tizimga kirish</h1>
-      <div className="regForm">
-        <form onSubmit={handleSubmit} className="form">
-          <label htmlFor="">Telefon</label>
-          <div className="inputs">
-          <span className="inputIcon"></span>
-            <input
-                id="phoneNumber"
-                type="text"
-                name="phoneNumber"
-                onChange={e => setPhoneNumber(e.target.value)}
-                value={phoneNumber}
-                placeholder="+998" />
-          </div>
-          <label htmlFor="password">Parol</label>
-          <div className="inputs">
-          <span className="inputIcon"></span>
-            <input 
-                id="password"
-                type="password"
-                name="password"
-                onChange={e => setPassword(e.target.value)}
-                value={password}
-                placeholder="******************" />
-          </div>
-          <button type="submit" className="subBtn">kirish</button>
-          <Link to="/forgotPswd" className="forgotPswd">Parolingizni unutingizmi</Link>
-        </form>
+    <div className="modalReg">
+      <div className="regWrapper">
+        <h1 className="formHeader">Tizimga kirish</h1>
+        <div className="regForm">
+          <form onSubmit={handleSubmit} className="form">
+            <label htmlFor="">Telefon</label>
+            <div className="inputs">
+            <span className="inputIcon"></span>
+              <input
+                  id="phoneNumber"
+                  type="text"
+                  name="phoneNumber"
+                  onChange={e => setPhoneNumber(e.target.value)}
+                  value={phoneNumber}
+                  placeholder="+998" />
+            </div>
+            <label htmlFor="password">Parol</label>
+            <div className="inputs">
+            <span className="inputIcon"></span>
+              <input 
+                  id="password"
+                  type={toggle? "text" : "password"}
+                  name="password"
+                  onChange={e => setPassword(e.target.value)}
+                  value={password}
+                  placeholder={toggle? "" : "******************"} />
+                  <i className={`fas fa-eye__grey ${toggle? 'fa-eye-slash' : 'fa-eye' }`} onClick={() => setToggle(!toggle)}></i>
+            </div>
+            <button type="submit" className="subBtn">kirish</button>
+            <Link to="/forgotPswd" className="forgotPswd">Parolingizni unutingizmi</Link>
+          </form>
+        </div>
+        <p className="formFooter">
+          Sizda akkount yoqmi?!&nbsp;
+          <Link to="/registration">Ro'yxatdan o'tish</Link>
+        </p>
       </div>
-      <p className="formFooter">
-        Sizda akkount yoqmi?!&nbsp;
-        <Link to="/registration">Ro'yxatdan o'tish</Link>
-      </p>
     </div>
   );
 };

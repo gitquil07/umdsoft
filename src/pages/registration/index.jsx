@@ -34,69 +34,66 @@ const Registration = () => {
     e.preventDefault();
   }
 
-  const setType = (e) => { 
-    setToggle(!toggle);
-    e.preventDefault();
-  }
-
-
   return(
-    <div className="regWrapper">
-      <h1 className="formHeader">Ro'yxatdan o'tish</h1>
-      <div className="regForm">
-        <form onSubmit={handleSubmit} className="form">
-          <label htmlFor="username">F.I.SH</label>
-          <div className="inputs">
+    <div className="modalReg">
+
+      <div className="regWrapper">
+        <h1 className="formHeader">Ro'yxatdan o'tish</h1>
+        <div className="regForm">
+          <form onSubmit={handleSubmit} className="form">
+            <label htmlFor="username">F.I.SH</label>
+            <div className="inputs">
+              <span className="inputIcon"></span>
+              <input 
+                  id="username"
+                  type="text" 
+                  name="username"
+                  onChange={e => setUsername(e.target.value)}
+                  value={username}
+                  placeholder="To'liq kiriting" />
+            </div>
+            <label htmlFor="">Telefon</label>
+            <div className="inputs">
             <span className="inputIcon"></span>
-            <input 
-                id="username"
-                type="text" 
-                name="username"
-                onChange={e => setUsername(e.target.value)}
-                value={username}
-                placeholder="To'liq kiriting" />
-          </div>
-          <label htmlFor="">Telefon</label>
-          <div className="inputs">
-          <span className="inputIcon"></span>
-            <input
-                id="phoneNumber"
-                type="text"
-                name="phoneNumber"
-                onChange={e => setPhoneNumber(e.target.value)}
-                value={phoneNumber}
-                placeholder="+998" />
-          </div>
-          <label htmlFor="password">Parol</label>
-          <div className="inputs">
-          <span className="inputIcon"></span>
-            <input 
-                id="password"
-                type={toggle? 'text' : 'password'}
-                name="password"
-                onChange={e => setPassword(e.target.value)}
-                value={password}
-                placeholder="******************" />
-                <button onClick={e => setType(e)}>{toggle? "hide" : 'show'}</button>
-          </div>
-          <label htmlFor="confirmPassword">Parolni tasdiqlash</label>
-          <div className="inputs">
-          <span className="inputIcon"></span>
-            <input 
-                id="confirmPassword"
-                type={toggle? "text" : "password"}
-                name="confirmPassword"
-                onChange={e => setConfirmPassword(e.target.value)}
-                value={confirmPassword}
-                placeholder="******************" />
-          </div>
-          <button type="submit" className="subBtn">ro'yxatdan o'tish</button>
-        </form>
+              <input
+                  id="phoneNumber"
+                  type="text"
+                  name="phoneNumber"
+                  onChange={e => setPhoneNumber(e.target.value)}
+                  value={phoneNumber}
+                  placeholder="+998" />
+            </div>
+            <label htmlFor="password">Parol</label>
+            <div className="inputs">
+            <span className="inputIcon"></span>
+              <input 
+                  id="password"
+                  type={toggle? 'text' : 'password'}
+                  name="password"
+                  onChange={e => setPassword(e.target.value)}
+                  value={password}
+                  placeholder={toggle? "" : "******************"} />
+                  <i className={`fas fa-eye__grey ${toggle? 'fa-eye-slash' : 'fa-eye'}`} onClick={() => setToggle(!toggle)}></i>
+            </div>
+            <label htmlFor="confirmPassword">Parolni tasdiqlash</label>
+            <div className="inputs">
+            <span className="inputIcon"></span>
+              <input 
+                  id="confirmPassword"
+                  type={toggle? "text" : "password"}
+                  name="confirmPassword"
+                  onChange={e => setConfirmPassword(e.target.value)}
+                  value={confirmPassword}
+                  placeholder={toggle? "" : "******************"} />
+            </div>
+            <button type="submit" className="subBtn">ro'yxatdan o'tish</button>
+          </form>
+        </div>
+        <p className="formFooter">
+          Menda akkount bor!&nbsp;
+          <Link to="/login">Kirish</Link>
+        </p>
       </div>
-      <p className="formFooter">
-        Menda akkount bor!&nbsp;
-        <Link to="/login">Kirish</Link>
-      </p>
     </div>
   );
 

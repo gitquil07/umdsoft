@@ -5,4 +5,5 @@ export { default as ForgotPassword } from './forgotPswd';
 export { default as OnlineRep } from './onlineRep';
 export { default as OnlineSchool } from './school'
 export { default as Profile } from './profile';
+export { default as Blog } from './blog/blogList';
 export { default as Forum } from './forum/forum';

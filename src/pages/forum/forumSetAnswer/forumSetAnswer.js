@@ -2,7 +2,15 @@ import React, {Component} from 'react';
 import './forumSetAnswer.css'
 import EditorTiny from "../../editorTiny/editorTiny";
 class ForumSetAnswer extends Component {
+
+    constructor(props){
+        super(props);
+    }
+
+
     render() {
+        const {match: {url}} = this.props;
+        console.log()
         return (
             <div className='pr-3'>
                 <h3 className='forumSetAnswer-h3'>Savolingiz mavzusi</h3>
