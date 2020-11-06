@@ -7,22 +7,21 @@ import Block1 from './Blocks/Block1';
 import Block2 from './Blocks/Block2';
 import Block3 from './Blocks/Block3';
 import Block4 from './Blocks/Block4';
-import Block5 from './Blocks/Block5';
 import Block6 from './Blocks/Block6';
 import Block7 from './Blocks/Block7';
 import Block8 from './Blocks/Block8';
 import Block9 from './Blocks/Block9';
 import Block10 from './Blocks/Block10';
-function Nodejs() {
+
+const Nodejs = () => {
     return (
-        <div id = 'nodejs' className='bg-light'>
+        <div className='bg-light pb-2'>
             <Header />
             <Container>
                 <Block1 />
                 <Block2 />
                 <Block3 />
                 <Block4 />
-                <Block5 />
                 <Block6 />
                 <Block7 />
                 <Block8 />

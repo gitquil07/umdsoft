@@ -7,6 +7,8 @@ import OnlineSchool from "./school";
 import Profile from "./profile";
 import Home from "./home";
 import Forum from "./forum/forum";
+import Nodejs from './nodeJs/nodeJs.jsx'
+import CoursePage from "./coursesPage/coursePage";
 
 const Main = () => {
   let {url, path} = useRouteMatch();
@@ -25,6 +27,9 @@ const Main = () => {
             <Route path="/school" component={OnlineSchool} />
             <Route path="/profile" component={Profile} />
             <Route path="/forum" component={Forum} />
+            <Route path="/nodejs" component={Nodejs} />
+            <Route path="/course" component={CoursePage} />
+
         </div>
         <Footer />
       </>

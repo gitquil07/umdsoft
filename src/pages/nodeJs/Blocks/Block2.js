@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Parts from '../Components/part'
 import study_block1 from '../img/study_block1.jpg'
 import study_block2 from '../img/study_block2.jpg'
 import study_block3 from '../img/study_block3.jpg'
@@ -9,24 +10,27 @@ import study_block7 from '../img/study_block7.jpg'
 import st from "../nodeJs.module.css";
 
 class Block2 extends React.Component {
+
+    
+
     render() {
         return(
             <div className={`${st.section} text-center`}>
                 
                 <h1 className={st.block__h1}>Как проходит обучение на курсе</h1>
-                <h3 className={st.block__h3}>Обучение</h3>
-                <p className={st.head__p}>Изучение материалов, работа над проектом с наставником</p>
+                <h3 className={`col__48 ${st.block__h3}`}>Обучение</h3>
+                <p className={st.block__p}>Изучение материалов, работа над проектом с наставником</p>
                 
                 <div className={`${st.parts} ${st.green__back}`}>
-                    <a href="#" className={`${st.part} ${st.block__a}`}>Раздел 1</a>
-                    <a href="#" className={`${st.part} ${st.block__a}`}>Раздел 2</a>
-                    <a href="#" className={`${st.part} ${st.block__a}`}>Раздел 3</a>
-                    <a href="#" className={`${st.part} ${st.block__a}`}>Раздел 4</a>
-                    <a href="#" className={`${st.part} ${st.block__a}`}>Раздел 5</a>
-                    <a href="#" className={`${st.part} ${st.block__a}`}>Раздел 6</a>
-                    <a href="#" className={`${st.part} ${st.block__a}`}>Раздел 7</a>
-                    <a href="#" className={`${st.part} ${st.block__a}`}>Раздел 8</a>
-                    <a href="#" className={`${st.part} ${st.block__a}`}>Раздел 9</a>
+                    
+                    <Parts title='JS: Kirish'/>
+                    <Parts title='JS: Kirish'/>
+                    <Parts title='JS: Kirish'/>
+                    <Parts title='JS: Kirish'/>
+                    <Parts title='JS: Kirish'/>
+                    <Parts title='JS: Kirish'/>
+                    <Parts title='JS: Kirish'/>
+
                 </div>
                 
                 <div style={{display: 'flex', justifyContent: 'space-between'}}>

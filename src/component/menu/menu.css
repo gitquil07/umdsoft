@@ -15,9 +15,9 @@
 
 .menu__item, h5, h6, .svg {
     margin: 0;
-    color: #989BF7 !important;
+    color:#02A4FE;
     transition: all .2s linear;
-    fill: #989BF7!important;
+    fill: #02A4FE;
 }
 
 .menu__item {
@@ -31,7 +31,7 @@
 }
 
 .search {
-    background-color: #b9b9b9;
+    background-color: #02A4FE;
     border: 0;
 }
 

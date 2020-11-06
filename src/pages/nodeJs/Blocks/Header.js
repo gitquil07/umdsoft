@@ -2,13 +2,12 @@ import React from 'react'
 import {Form } from 'react-bootstrap'
 import st from '../nodeJs.module.css'
 import '../nodeJs.module.css'
-console.log(st)
 class Header extends React.Component  {
     render() {
         return(
             <div className={st.header}>
 
-                <div className={st.section}>
+                <div className={`${st.section} pb-4`}>
                     <div className={st.container}>
                         <div className={st.aside}>
                             <h4 className={st.block__h4} style={{margin: "10px 0", fontWeight: "400"}}>Онлайн-курс</h4>
@@ -38,7 +37,7 @@ class Header extends React.Component  {
                                 </div>
                                 <div className={st.form__input}>
                                     <label htmlFor="email" className={st.block__label}>
-                                        Эл. почта <span className="red">*</span>
+                                        Эл. почта <span className={st.red}>*</span>
                                     </label>
                                     <input type="email" id="email" placeholder="studentoftuit@gmail.com" className={`st.input ${st.block__input}`} required />
                                 </div>
@@ -47,7 +46,7 @@ class Header extends React.Component  {
                             </Form>
                             <i style={{color: "#FF9100"}} className="fas fa-exclamation-circle"></i> <span>Обязательное поле</span>
                         </div>
-                        <div style={{width: '100%', marginTop: '30px', textAlign: 'center', cursor: "pointer"}} className={`${st.green} ${st.gr__chevr}`}> <i className="fas fa-chevron-down"></i></div>
+                        
                     </div>
                 </div>
         </div>

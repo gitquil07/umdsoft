@@ -22,11 +22,6 @@ const Header = ({viewAside}) => {
                     </div>
                 </div>
                 <div className='align-items-center header-nav-menu'>
-                    <div className='my-2 text-right'>
-                        <a href='#' className='mx-2' style={{cursor: 'pointer'}}>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 18 24"><g><g><g><path fill="#303956" d="M15.75 10.5a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-.75.75H2.25a.75.75 0 0 1-.75-.75v-10.5a.75.75 0 0 1 .75-.75zM18 21.75v-10.5C18 10.009 16.99 9 15.75 9H2.25A2.253 2.253 0 0 0 0 11.25v10.5C0 22.991 1.01 24 2.25 24h13.5c1.24 0 2.25-1.009 2.25-2.25z"/></g><g><path fill="#303956" d="M14.25 10.5a.75.75 0 0 1-.75-.75V6c0-2.481-2.019-4.5-4.5-4.5A4.505 4.505 0 0 0 4.5 6v3.75a.75.75 0 0 1-1.5 0V6c0-3.309 2.691-6 6-6s6 2.691 6 6v3.75a.75.75 0 0 1-.75.75z"/></g><g><path fill="#303956" d="M9.5 15a.5.5 0 1 1-1.002-.002A.5.5 0 0 1 9.5 15zm1.5 0c0-1.103-.897-2-2-2s-2 .897-2 2 .897 2 2 2 2-.897 2-2z"/></g><g><path fill="#303956" d="M9 20a.75.75 0 0 1-.75-.75V16.5a.75.75 0 0 1 1.5 0v2.75A.75.75 0 0 1 9 20z"/></g></g></g></svg>
-                        </a>
-                    </div>
                     <div className='my-2'>
                         <a href='/login' className='mx-2 nav-link avtoriz'>Avtorizatsiya</a>
                     </div>

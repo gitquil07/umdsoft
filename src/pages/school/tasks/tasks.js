@@ -7,7 +7,7 @@ class Tasks extends React.Component {
         return(
             <div>
             <div className='my-4 d-flex flex-wrap justify-content-between'>
-            <div className='tasks d-flex  my-3'>
+            <div className='tasks d-flex my-3'>
                     <a href='#' className='task-item__link'>
                         <img 
                             src='https://avatars.mds.yandex.net/get-euler/3226043/f526cc5e-6b31-4b80-a930-0aff7b3bf88c/orig'
