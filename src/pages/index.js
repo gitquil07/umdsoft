@@ -6,3 +6,4 @@ export { default as OnlineRep } from './onlineRep';
 export { default as OnlineSchool } from './school'
 export { default as Profile } from './profile';
 export { default as Forum } from './forum/forum';
+export { default as Online } from './online/Online';
