@@ -1,6 +1,14 @@
 .scale-in-right {
-    -webkit-animation: scale-in-right 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: scale-in-right 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: scale-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@media only screen and (max-width: 770px) {
+    .media776 {
+        position: relative;
+        float: contour;
+        padding-top:100px!important;
+        width: 295px;
+    }
 }
 
 /* ----------------------------------------------

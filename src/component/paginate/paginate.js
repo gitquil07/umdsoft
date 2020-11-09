@@ -9,7 +9,7 @@ export class ForumPaginate extends Component {
   static propTypes = {
     url: PropTypes.string,
     author: PropTypes.string,
-    perPage: PropTypes.number.isRequired,
+    perPage: PropTypes.number,
   };
 
   constructor(props) {

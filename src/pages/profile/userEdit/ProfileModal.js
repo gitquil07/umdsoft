@@ -21,48 +21,48 @@ class ProfileModal extends Component {
         return (
             <div>
                 <div>
-                    <Button className="btn btn-block btn-info" onClick={this.toggle}>zayavka</Button>
-                    <Modal isOpen={!this.state.modal} toggle={this.toggle} className={"scale-in-right"}>
-                        <ModalHeader toggle={this.toggle}>So'rov shakllantirish</ModalHeader>
-                        <Form className="form">
-                        <ModalBody>
-                            <div className="regForm">
+                    <Button className=" btn btn-block btn-info" onClick={this.toggle}>zayavka</Button>
+                    <Modal isOpen={!this.state.modal} toggle={this.toggle} className={"scale-in-right media776 mt-5 pt-5"}>
+                           <ModalHeader toggle={this.toggle}>So'rov shakllantirish</ModalHeader>
+                           <Form className="form">
+                               <ModalBody>
+                                   <div className="regForm pb-1 pt-1">
 
-                                    <Label htmlFor="">F.I.O</Label>
-                                    <div className="inputs">
-                                        <span className="inputIcon"></span>
-                                        <Input
-                                            id="fio"
-                                            type="text"
-                                            name="fio"
-                                            placeholder="F.I.O" />
-                                    </div>
-                                    <Label htmlFor="">NUMBER</Label>
-                                    <div className="inputs">
-                                        <span className="inputIcon"></span>
-                                        <Input
-                                            id="number"
-                                            type="text"
-                                            name="number"
-                                            placeholder="NUMBER" />
-                                    </div>
-                                <Label htmlFor="" className="mb-3">SKILLS</Label>
-                                <div className="inputs">
-                                    <span className=""></span>
-                                    <Input
-                                        id="skills"
-                                        type="textarea"
-                                        name="skills"
-                                        placeholder="SKILLS" />
-                                </div>
-                            </div>
-                        </ModalBody>
-                        <ModalFooter>
-                            <Button color='danger' onClick={()=>this.toggle()}>Cancel</Button>{' '}
-                            <Button color='primary' onClick={()=>this.toggle()}>Submit</Button>
-                        </ModalFooter>
-                        </Form>
-                    </Modal>
+                                       <Label htmlFor="">F.I.O</Label>
+                                       <div className="inputs">
+                                           <span className="inputIcon"></span>
+                                           <Input
+                                               id="fio"
+                                               type="text"
+                                               name="fio"
+                                               placeholder="F.I.O" />
+                                       </div>
+                                       <Label htmlFor="">NUMBER</Label>
+                                       <div className="inputs">
+                                           <span className="inputIcon"></span>
+                                           <Input
+                                               id="number"
+                                               type="text"
+                                               name="number"
+                                               placeholder="NUMBER" />
+                                       </div>
+                                       <Label htmlFor="" className="mb-3">SKILLS</Label>
+                                       <div className="inputs">
+                                           <span className=""></span>
+                                           <Input
+                                               id="skills"
+                                               type="textarea"
+                                               name="skills"
+                                               placeholder="SKILLS" />
+                                       </div>
+                                   </div>
+                               </ModalBody>
+                               <ModalFooter>
+                                   <Button color='danger' onClick={()=>this.toggle()}>Cancel</Button>{' '}
+                                   <Button color='primary' onClick={()=>this.toggle()}>Submit</Button>
+                               </ModalFooter>
+                           </Form>
+                       </Modal>
                 </div>
             </div>
         );

@@ -1,30 +1,50 @@
-import React from 'react'
-import {Link, Route} from 'react-router-dom'
-import { ForumPaginate } from '../../component/paginate/paginate'
-import './forum.css'
-import forumGroup from './forumGroup/forumGroup'
-import ForumStars from './forumStars/forumStars'
+import React from 'react';
+import {Link, Route, Switch, useRouteMatch} from 'react-router-dom';
+import { ForumPaginate } from '../../component/paginate/paginate';
+import './forum.css';
+import ForumStars from './forumStars/forumStars';
 import ForumAnswerBlock from "./forumAnswerBlock/forumAnswerBlock";
 import ForumSetAnswer from "./forumSetAnswer/forumSetAnswer";
+
 class Forum extends React.Component {
+    
+    constructor(props){
+        super(props);
+    }
+
     render(){
+        let {match: {url}} = this.props;
+        console.log(url);
         return(
             <>
                 <div className='forum container d-flex justify-content-between'>
 
                     <div id='paginate-root' className='forum-aside'>
-                        <ForumPaginate/>
-                        <ForumAnswerBlock />
-                        <ForumSetAnswer />
+                       <Switch>
+                            <Route exact path={`${url}/`} component={ForumPaginate} />
+                            <Route path={`${url}/question`} component={ForumSetAnswer} />
+                            <Route path={`${url}/answers`} component={ForumAnswerBlock} />
+                       </Switch>
                     </div> {/*forum-aside */}
 
 
                     <div className='forum-rside mb-3'>
                         <div className='forum-group-add'>
-                            <button className='form-group-add-btn'>
-                                <span className=''>Savol berish</span>
-                                <span className=''>+</span>
-                            </button>
+                            <Route path={`${url}/:forumCat?`} render={props => {
+                                let forumPage = (!props.match.params.forumCat)? " " : props.match.params.forumCat;
+
+                                if(forumPage != "question"){
+                                    return (
+                                        <Link to={`${url}/question`} className='form-group-add-btn'>
+                                            <span className=''>Savol berish</span>
+                                            <span className=''>+</span>
+                                        </Link>
+                                    );
+                                }else{
+                                    return "";
+                                }
+                               
+                            }}/>
                         </div>
                         <div className='forum-nav bg-white'>
                             <h5>Barcha sahifalar</h5>

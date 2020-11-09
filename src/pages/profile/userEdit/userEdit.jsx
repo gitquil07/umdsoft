@@ -64,7 +64,7 @@ const UserEdit = ({avatar, username}) => {
              </div>
              <button className="profile-buttons">o'zgartirish</button>
          </form>
-        <ProfileModal/>
+         <ProfileModal/>
      </div>
 
 
