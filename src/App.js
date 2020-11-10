@@ -13,8 +13,6 @@ import { Forum } from "./pages";
 import { Blog } from "./pages";
 import NodeJs  from './pages/nodeJs/nodeJs'
 import './style.css';
-
-import NodeJs from './pages/nodeJs/nodeJs'
 import Online from './pages/online/Online'
 function App() {
 

@@ -8,7 +8,7 @@ const Header = ({viewAside}) => {
         <div id='main' className='main'>
             {/* HEADER */}
             <div id='header' className='header d-flex justify-content-between align-items-center bg-light'>
-                <div className='header-item d-flex align-items-center'>
+                <div className='d-flex align-items-center'>
                     <div className='burger-menu'>
                         <a href='#' onClick={viewAside} className='mx-2 nav-link burger'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 23 18"><g><g><g><path className='burger__svg' fill="#303956" d="M1 2a1 1 0 0 1 0-2h21a1 1 0 0 1 0 2z"/></g><g><path className='burger__svg' fill="#303956" d="M1 10a1 1 0 0 1 0-2h21a1 1 0 0 1 0 2z"/></g><g><path className='burger__svg' fill="#303956" d="M1 18a1 1 0 0 1 0-2h21a1 1 0 0 1 0 2z"/></g></g></g></svg>
