@@ -1,5 +1,6 @@
 import React from "react";
-import { NavLink } from 'react-bootstrap'
+import { NavLink } from 'react-bootstrap';
+import { Link } from "react-router-dom";
 import "./header.css";
 
 const Header = ({viewAside}) => {
@@ -15,15 +16,16 @@ const Header = ({viewAside}) => {
                     </div>
                     <div className='header-nav-menu'>
                         {/* <Router> */}
-                            <NavLink to='/' activeClassName='nav-link__active' className='mx-1 nav-link'>IT AKADEMIYA</NavLink> 
-                            <NavLink to='/repetitor' activeClassName='nav-link__active' className='mx-1 nav-link'>ONLAYN REPETITOR</NavLink> 
-                            <NavLink to='/school' activeClassName='nav-link__active' className='mx-1 nav-link'>ONLAYN MAKTAB</NavLink> 
+                            <Link to='/' activeclassname='nav-link__active' className='mx-1 nav-link'>IT AKADEMIYA</Link> 
+                            <Link to='/tutor' activeclassname='nav-link__active' className='mx-1 nav-link'>ONLAYN REPETITOR</Link> 
+                            <Link to='/school' activeclassname='nav-link__active' className='mx-1 nav-link'>ONLAYN MAKTAB</Link> 
                         {/* </Router> */}
                     </div>
                 </div>
                 <div className='align-items-center header-nav-menu'>
                     <div className='my-2'>
-                        <a href='/login' className='mx-2 nav-link avtoriz'>Avtorizatsiya</a>
+                        {/* <a href='/login' className='mx-2 nav-link avtoriz'>Avtorizatsiya</a> */}
+                        <Link to="/login" className='mx-2 nav-link avtoriz'>Avtorizatsiya</Link>
                     </div>
                     <div className='my-2 text-right'>
                         <a href='#' className='mx-2'>

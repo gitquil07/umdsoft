@@ -5,6 +5,7 @@ import person from '../../img/person.svg'
 import video from '../../img/video.svg'
 import success from '../../img/success.svg'
 import comments from '../../img/comments.svg'
+import { Link } from 'react-router-dom'
 
 class Banner extends React.Component {
     constructor(props){
@@ -18,8 +19,8 @@ class Banner extends React.Component {
                     <div className='container' id='container'>
                         <h1 className='lecture__h1 text-white'>{title}</h1>
                         <p className='lecture__p text-white'>{text}</p>
-                        <a href='#' className='wh__btn'>BATAFSIL</a>
-                        <p className='lecture__p'><a href='#' className='lecture__a text-white'>Siz o'qituvchimisiz?</a></p>
+                        <Link to='/profile' className='wh__btn'>BATAFSIL</Link>
+                        <p className='lecture__p'><Link to='/profile' className='lecture__a text-white'>Siz o'qituvchimisiz?</Link></p>
                     </div>
                 </div>
 

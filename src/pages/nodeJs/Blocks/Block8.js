@@ -31,7 +31,7 @@ class Block8 extends React.Component {
     render() {
         return(  
              <div className={st.section}>
-                 <h1 className={`${st.w1} ${st.block__h1} mb-3`}>Программа курса</h1>
+                 <h1 className={`${st.w1} ${st.block__h1} mb-3`}>Kurs dasturi</h1>
 
                 
                     <Accordion defaultActiveKey="0"  className='text-left'>

@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { Link } from 'react-router-dom'
 
 export default function Course ({title, time, lesson, img}) {
 
@@ -15,7 +16,7 @@ export default function Course ({title, time, lesson, img}) {
                 <div className='h-50 px-2'>
                     <div className='pt-2 pb-3 border-bottom'>
                         <div className='d-flex justify-content-between'>
-                            <a href='#'><h5 className='mb-1 col__56 text-uppercase font-weight-bold'>{title}</h5></a>
+                            <Link to='/nodejs'><h5 className='mb-1 col__56 text-uppercase font-weight-bold'>{title}</h5></Link>
                             <span onClick={() => setLove(!loves)}><i role='button' className={`fa-heart col__green ${(loves)? 'far ' : 'fas'}`}></i></span>
                         </div>
                         <div>

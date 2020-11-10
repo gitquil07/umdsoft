@@ -2,9 +2,11 @@ a ,button{
   text-decoration: none !important;
   transition: all .2s linear;
 }
+
 button:focus{
   outline: none;
 }
+
 .bg__blue {
   background-color: #4f56f5;
 }
@@ -52,9 +54,25 @@ button:focus{
   padding: 0 !important;
 }
 
+.modalReg{
+  background-image:url(../src/img/reg.jpg);
+  background-size:cover;
+  background-color:#4f56f5;
+  background-blend-mode:soft-light;
+  height:100%;
+  width:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+
 .regWrapper{
-  max-width:425px;
-  margin:83px auto;
+  width:370px;
+  margin:1px auto 0 auto;
+  line-height:100%;
   background-color:#fff;
   border:1px solid rgba(0, 0, 0, 0.08);
   border-radius:10px;
@@ -267,6 +285,14 @@ button:focus{
   border-radius: 5px;
 }
 
+.fa-eye__grey{
+  color:#CACACA;
+}
+
+.fa-eye__grey:hover{
+  color:#a7a6a6;
+}
+
 .col__gold {
   color: #FF8800;
 }
@@ -275,6 +301,10 @@ button:focus{
   transition: all .2s linear;
   margin-top: 5.5%;
   margin-left: 17%;
+}
+
+.carousel-indicators {
+  display: none;
 }
 
 
@@ -334,6 +364,21 @@ right: 5px !important;
 
 @media (min-width: 1367px) and (max-width: 1440px) {
 
+}
+
+@media (min-width: 1200px){
+  .post-blog{
+    width:400px;
+    /* height:450px; */
+  }
+
+  .post-blog__img{
+    height:200px;
+  }
+
+  .post-blog:hover .post-blog__img{
+    height:190px;
+  }
 }
 
 @media (max-width: 1365px) {
@@ -410,6 +455,7 @@ right: 5px !important;
   .achievements-item {
     width: 45%;
   }
+
   
   /* IT AKADEMIYA */
 }
@@ -600,6 +646,32 @@ right: 5px !important;
     }
 }
 
+@media(min-width:768px) and (max-width:1024px){
+/* 
+  .modalReg{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  } */
+
+  /* .regWrapper{
+    width:50%;
+  } */
+
+  /* .formHeader,
+  .formFooter{
+    height:80px;
+    line-height:80px;
+  }
+
+  .inputs,
+  .subBtn{
+    height:55px;
+  } */
+
+  
+}
+
 @media (max-width: 730px) {
   .tasks {
     flex-wrap: wrap;
@@ -688,9 +760,31 @@ right: 5px !important;
     
 }
 
+
+@media(max-width:535px){
+
+  .post-blog{
+    width:80%;
+    height:fit-content;
+    padding-bottom:20px;
+  }
+
+}
+
 @media (max-width: 480px) {
 
   /* ASIDE */
+
+  .modalReg{
+    background:none;
+    background-color:#fff;
+  }
+
+  .regWrapper{
+    margin-top:40px;
+    width:100%;
+    border:none;
+  }
 
   .aside {
     width: 70%;
@@ -714,6 +808,10 @@ right: 5px !important;
 }
 
 @media (max-width: 350px) {
+
+  .post-blog{
+    width:320px;
+  }
 
   .after__header {
     margin-top: 176px;

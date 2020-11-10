@@ -8,7 +8,7 @@ import desctop from '../../../img/desctop.svg'
 import python from '../../../img/python.svg'
 
 
-import Course from './course'
+import Course from '../../../component/course/course'
 
 function Courses() {
 

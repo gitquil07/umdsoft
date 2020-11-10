@@ -10,42 +10,41 @@ class Block3 extends React.Component {
             <div className='container'>  
                 <div className={`${st.section} text-center`}>
                 
-                    <h1 className={`${st.block__h1} mb-3`}>Учим делать правильно</h1>
+                    <h1 className={`${st.block__h1} mb-3`}>O`qishga to`g`ri yondashamiz</h1>
                     <div className={st.lesson__blocks}>
                         <div className={st.lesson__block}>
                             <img src={lesson1} width="50px" alt="" />
-                            <p className={st.block__p}>Актуальные стандарты качества: не нужно переучиваться после курса.</p>
+                            <p className={st.block__p}>Zamon talabiga mos bo`lgan texnologiyalar</p>
                         </div>
 
                         <div className={st.lesson__block}>
                             <img src={lesson2} width="63px" alt="" />
-                            <p className={st.block__p}>Понимание полного цикла работы разработчика.</p>
+                            <p className={st.block__p}>O`rganish metodiga to`g`ri yondashuv</p>
                         </div>
 
                         <div className={st.lesson__block}>
                             <img src={lesson3} width="62px" alt="" />
-                            <p className={st.block__p}>Фундаментальные и структурированные знания необходимых технологий.</p>
+                            <p className={st.block__p}>Texnologiyalardan to`g`ri foydalanish</p>
                         </div>
 
                         <div className={st.lesson__block}>
                             <img src={lesson4} width="36px" alt="" />
-                            <p className={st.block__p}>Опыт работы с дедлайнами и планирования работы.</p>
+                            <p className={st.block__p}>Loyihani to`g`ri rejalashtirishni</p>
                         </div>
                     </div>
                 
                 </div> 
 
             <div className='d-flex flex-wrap align-items-center'>
-                    <h2 className={st.block__h2}>После успешного завершения курса можно начать карьеру фулстек-разработчика, а также продолжить обучение на других наших курсах.</h2>
-                    <h1 className={`${st.block__h1} ${st.green}`}> 5 000 000 сум</h1>
-                    <p className={st.block__p}>Медианное значение зарплаты фулстек-разработчика по исследованию компании &laquo;Мой круг&raquo; в Ташкенте во втором полугодии 2020 года.</p>
-            </div>
+                    <h2 className={st.block__h2}>Kursni muvaffaqiyatli tugatganingizdan kegin o`z karyerangizni FULL-STACK dasturchilikda davom ettirishingiz mumkin, bundan tashqari yangi bilimlarni o`rganishda davom etasiz</h2>
+                    <h1 className={`${st.block__h1} ${st.green}`}> 6 950 000 сум</h1>
+                           </div>
 
                 <div className={`${st.section__blocks} w-100 ${st.check__course} align-items-center justify-content-around round`}>
                     <a href='#' className={`${st.blue__btn} ${st.block__a} py-1 px-3`}>
-                        Записаться на курс
+                        Kursga yozilish
                     </a>
-                    <h4 className={`m-0 ${st.block__h4}`}>Консультация по телефону 71.784-56-99</h4>
+                    <h4 className={`m-0 ${st.block__h4}`}>Telefon orqali ma`lumot olish 33.477-34-77</h4>
                 </div>
             </div>
         )

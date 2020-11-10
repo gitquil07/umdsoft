@@ -20,19 +20,27 @@
     color: #e5e5e5;
 }
 
-.plusik {
-    float: right;
-    width: 28px;
-    height: 20px;
-    font-weight: 500;
-    padding-left: 8px;
-    padding-top: 3px;
-    padding-bottom: 26px;
-    border-radius: 50%;
+.study__types__link {
+    padding: 5px 9px;
+    border-radius: 5px;
+    color: #4f56f5;
     background-color: #fff;
+    font-weight: 700;
+    animation: text-shadow 1s linear infinite;
 }
 
-.plusik:hover {
+@keyframes text-shadow {
+    from {
+        text-shadow: 0 0 7px #fff;
+        box-shadow: 0 0 10px #fff;
+        color: #fff;
+        background-color: #4f56f5;
+    }
+}
+
+.study__types__link:hover {
     color: #fff;
+    text-shadow: 0 0 7px #fff;
+    box-shadow: 0 0 10px #fff;
     background-color: #4f56f5;
 }
