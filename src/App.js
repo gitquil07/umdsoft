@@ -14,7 +14,8 @@ import { Blog } from "./pages";
 import NodeJs  from './pages/nodeJs/nodeJs'
 import './style.css';
 
-
+import NodeJs from './pages/nodeJs/nodeJs'
+import Online from './pages/online/Online'
 function App() {
 
   let [isOpen, setIsOpen] = React.useState(true);
@@ -58,6 +59,7 @@ function App() {
           <Route path="/school" component={OnlineSchool} />
           <Route path="/profile" component={Profile} />
           <Route path="/forum" component={Forum} />
+          <Route path="/online" component={Online} />
           <Route path="/blog" component={Blog} />
           <Route path="/nodejs" component={NodeJs} />
         </div>
@@ -72,7 +74,7 @@ function App() {
           return "";
         }
       }}/>
-    </Router> 
+    </Router>
   );
 }
 

@@ -9,6 +9,7 @@ import Home from "./home";
 import Forum from "./forum/forum";
 import Nodejs from './nodeJs/nodeJs.jsx'
 import CoursePage from "./coursesPage/coursePage";
+import Online from "./online/Online";
 
 const Main = () => {
   let {url, path} = useRouteMatch();
