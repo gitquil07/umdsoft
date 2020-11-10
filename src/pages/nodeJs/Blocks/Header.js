@@ -2,7 +2,6 @@ import React from 'react'
 import {Form } from 'react-bootstrap'
 import st from '../nodeJs.module.css'
 import '../nodeJs.module.css'
-console.log(st)
 class Header extends React.Component  {
     render() {
         return(
