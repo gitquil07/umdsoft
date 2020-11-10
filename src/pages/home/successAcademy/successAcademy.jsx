@@ -10,7 +10,7 @@ class SuccessAcademy extends React.Component {
     render() {
         return (
             <div className='mb-5'>
-                <ItemContainer title='SERTIFIKAT - SUCCESS ACADEMY'>
+                <ItemContainer title='SERTIFIKAT - UMDSoft ACADEMY'>
                     <div className='certificate__items d-flex justify-content-between'>
                         <div className='certificate__item'>
                             <p className='certificate__text pb-3'>

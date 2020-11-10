@@ -18,7 +18,7 @@ class OnlineSchool extends React.Component {
                 <Container>
                     <div className='py-5 bg-light'>
                         <Tabs className='tabs' defaultActiveKey="subjects" id="uncontrolled-tab-example">
-                            <Tab eventKey="subjects" className='' title="BARCHA FANLAR">
+                            <Tab eventKey="subjects" title="BARCHA FANLAR">
                                 <Subjects />
                             </Tab>
                             <Tab eventKey="onlineSeminar" title="ONLINE SEMINAR">

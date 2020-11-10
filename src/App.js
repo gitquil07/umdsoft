@@ -68,6 +68,7 @@ function App() {
           <Route path="/forum" component={Forum} />
           <Route path="/online" component={Online} />
           <Route path="/blog" component={Blog} />
+          <Route path="/nodejs" component={NodeJs} />
         </div>
       
       <Route path="/:page?" render={props => {

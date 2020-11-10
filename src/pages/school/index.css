@@ -2,6 +2,10 @@
     border: 0;
 }
 
+.nav-tabs {
+    padding-bottom: 5px;
+}
+
 .tabs .nav-link {
     margin: 5px;
     color: #303956 !important;

@@ -12,16 +12,16 @@
 }
 
 .check__certif__btn {
-    padding: 12px 32px;
-    font-size: 16px;
-    font-weight: 400;
+    padding: 10px 32px !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
     font-style: normal;
     letter-spacing: normal;
     box-shadow: 0 0 18px rgba(0, 0, 0, 0.16);
     border-radius: 3px;
     background-image: linear-gradient(103deg, #4a4ae0 0%, #892dda 100%);
     outline: none;
-    border: 0;
+    border: 0 !important;
     transition: all .2s linear;
 }
 
