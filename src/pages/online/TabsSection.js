@@ -6,45 +6,26 @@ import {FaAngleDown, FaClock, FaCss3Alt, FaPlayCircle, FaStar} from "react-icons
 import './main.css'
 
 
-const mql = window.matchMedia(`(min-width: 900px)`);
+const mql = window.matchMedia(`(min-width: 900px)`)
+console.log(mql);
 
 class TabsSection extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            sidebarDocked: mql.matches,
-            sidebarOpen: false,
-            sideNavLeft: false,
             eventKey:60,
-            isBarsOpen: false,
         };
 
-        this.mediaQueryChanged = this.mediaQueryChanged.bind(this);
-        this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this);
     }
 
-    componentWillMount() {
-        mql.addListener(this.mediaQueryChanged);
-    }
-
-    componentWillUnmount() {
-        this.state.mql.removeListener(this.mediaQueryChanged);
-    }
-
-    onSetSidebarOpen(open) {
-        this.setState({sidebarOpen: open});
-    }
-
-    mediaQueryChanged() {
-        this.setState({sidebarDocked: mql.matches, sidebarOpen: false});
-    }
     render() {
+        console.log(this.props.mql)
         return (
             <div>
                 <Row md={12}>
                     <Col md={12} sm={12} className="">
                         <Tabs defaultActiveKey="description" id="online-kurs-tabs">
-                            <Tab eventKey="description" title="Description" enabled tabClassName={mql.matches?"btn":"btn btn-block"}>
+                            <Tab eventKey="description" title="Description" enabled tabClassName={this.props.mql.matches?"btn":"btn btn-block"}>
                                 <ol>
                                     <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, voluptates.</li>
                                     <li><p>Lorem ipsum doset, consectetur adipisicing elit. Ab aperiam dignissimos recusandae, soluta tempore vero.</p></li>
@@ -53,7 +34,7 @@ class TabsSection extends Component {
                                 </ol>
                             </Tab>
 
-                            <Tab eventKey="home" title="Home" tabClassName={mql.matches?"btn":"btn btn-block"}>
+                            <Tab eventKey="home" title="Home" tabClassName={this.props.mql.matches?"btn":"btn btn-block"}>
 
                                 <Table className="table table-info">
                                     <thead className="bg-white"><h2><p>kirish</p></h2></thead>
@@ -188,7 +169,7 @@ class TabsSection extends Component {
                                 </Table>
                             </Tab>
 
-                            <Tab eventKey="profile" title="Profile" tabClassName={mql.matches?"btn":"btn btn-block"}>
+                            <Tab eventKey="profile" title="Profile" tabClassName={this.props.mql.matches?"btn":"btn btn-block"}>
                                 <Accordion defaultActiveKey="0">
                                     <Card>
                                         <CardHeader>
@@ -203,7 +184,7 @@ class TabsSection extends Component {
                                 </Accordion>
                             </Tab>
 
-                            <Tab eventKey="reyting" title="Reyting" tabClassName={mql.matches?"btn":"btn btn-block"}>
+                            <Tab eventKey="reyting" title="Reyting" tabClassName={this.props.mql.matches?"btn":"btn btn-block"}>
                                 <Row md={12}>
                                     <Col md={4}>
                                         <div className="mt-5"></div>
@@ -288,7 +269,7 @@ class TabsSection extends Component {
                                 </Row>
                             </Tab>
 
-                            <Tab eventKey="contact" title="Contact" tabClassName={mql.matches?"btn":"btn btn-block"}>
+                            <Tab eventKey="contact" title="Contact" tabClassName={this.props.mql.matches?"btn":"btn btn-block"}>
                                 <ol>
                                     <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, maxime!</li>
                                     <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit!</li>

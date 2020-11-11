@@ -5,37 +5,8 @@ import {FaBullhorn, FaChartLine, FaClock, FaHeart, FaUsers} from "react-icons/al
 import './main.css'
 
 
-const mql = window.matchMedia(`(min-width: 900px)`);
 class RightSection extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            sidebarDocked: mql.matches,
-            sidebarOpen: false,
-            sideNavLeft: false,
-            eventKey:60,
-            isBarsOpen: false
-        };
-
-        this.mediaQueryChanged = this.mediaQueryChanged.bind(this);
-        this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this);
-    }
-
-    componentWillMount() {
-        mql.addListener(this.mediaQueryChanged);
-    }
-
-    componentWillUnmount() {
-        this.state.mql.removeListener(this.mediaQueryChanged);
-    }
-
-    onSetSidebarOpen(open) {
-        this.setState({sidebarOpen: open});
-    }
-
-    mediaQueryChanged() {
-        this.setState({sidebarDocked: mql.matches, sidebarOpen: false});
-    }
+    
     render() {
         return (
 

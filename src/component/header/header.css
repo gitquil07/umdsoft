@@ -32,15 +32,14 @@
     background-color: #303956;
 }
 
-.nav-link {
-    width: fit-content;
+.nav-header-link {
     font-size: 14px;
     font-weight: 700;
     color:#303956 !important;
 
 } 
  
-.nav-link:hover {
+.nav-header-link:hover {
     color: #02A4FE !important ;
 }
 

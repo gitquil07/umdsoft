@@ -11,6 +11,7 @@ import './main.css'
 import ProfileModal from "../profile/userEdit/ProfileModal";
 
 const mql = window.matchMedia(`(min-width: 900px)`);
+console.log(mql);
 class Online extends Component {
     constructor(props) {
         super(props);
@@ -31,7 +32,7 @@ class Online extends Component {
     }
 
     componentWillUnmount() {
-        this.state.mql.removeListener(this.mediaQueryChanged);
+        mql.removeListener(this.mediaQueryChanged);
     }
 
     onSetSidebarOpen(open) {
@@ -49,11 +50,11 @@ class Online extends Component {
                 <Row md={12}>
                     <Col md={9} className="pl-5 pr-5">
                         {/*TOP SECTION1*/}
-                        <TopSection1/>
+                        <TopSection1 mql={mql}/>
                         {/*TOP SECTION1*/}
 
                        {/* TABS TAB*/}
-                        <TabsSection/>
+                        <TabsSection mql={mql}/>
                         {/* TABS TAB*/}
                     </Col>
 

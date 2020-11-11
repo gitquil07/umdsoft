@@ -11,40 +11,19 @@ class TopSection1 extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            sidebarDocked: mql.matches,
-            sidebarOpen: false,
-            sideNavLeft: false,
-            eventKey:60,
-            isBarsOpen: false
+
         };
 
-        this.mediaQueryChanged = this.mediaQueryChanged.bind(this);
-        this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this);
     }
 
-    componentWillMount() {
-        mql.addListener(this.mediaQueryChanged);
-    }
-
-    componentWillUnmount() {
-        this.state.mql.removeListener(this.mediaQueryChanged);
-    }
-
-    onSetSidebarOpen(open) {
-        this.setState({sidebarOpen: open});
-    }
-
-    mediaQueryChanged() {
-        this.setState({sidebarDocked: mql.matches, sidebarOpen: false});
-    }
     render() {
         return (
             <div>
                 <Row md={12} className="mt-5">
                     <Col md={12} sm={12}>
                         <h1 className="mb-5">Eng Yangi Texnologiyalar va MERN bilan Web Dasturlash Backendni Örganing.</h1>
-                        <Navbar className={mql.matches?"nav pl-0":"nav pl-0 d-inline-block"}>
-                            <ul className={mql.matches?"navbar list-unstyled ml-0 p-0":"list-unstyled ml-0 p-0"}>
+                        <Navbar className={this.props.mql.matches?"nav pl-0":"nav pl-0 d-inline-block"}>
+                            <ul className={this.props.mql.matches?"navbar list-unstyled ml-0 p-0":"list-unstyled ml-0 p-0"}>
                                 <li className={"nav-link mb-2 pl-0"}>
                                     <Link to="#">
                                         <img src={teacher} className="mt-3 img60 mr-2" alt=""/>

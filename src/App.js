@@ -11,8 +11,11 @@ import { Profile } from "./pages";
 import { Home } from "./pages";
 import { Forum } from "./pages";
 import { Blog } from "./pages";
-import NodeJs  from './pages/nodeJs/nodeJs'
 import './style.css';
+
+import NodeJs from './pages/nodeJs/nodeJs'
+import Admin from "./pages/admin/admin";
+import AdminLogin from "./pages/admin/adminLogin/AdminLogin";
 import Online from './pages/online/Online'
 function App() {
 
@@ -32,11 +35,17 @@ function App() {
   
 
   return (
+
     <Router>
       <Route path="/forgotPswd" component={ForgotPassword} /> 
       <Route path="/login" component={Login} /> 
       <Route path="/registration" component={Registration} />
 
+      <Route path='/admin' component={Admin}/>
+      <Route path='/charts-morris' component={Admin}/>
+      <Route path='/charts-apex' component={Admin}/>
+      <Route path='/charts-chartlist' component={Admin}/>
+      <Route path='/charts-chartjs' component={Admin}/>
       <Route path="/:page?" render={props => {
           let page = (!props.match.params.page)? "home" : props.match.params.page;
           

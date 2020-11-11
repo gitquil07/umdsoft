@@ -10,22 +10,21 @@ const Header = ({viewAside}) => {
             <div id='header' className='header d-flex justify-content-between align-items-center bg-light'>
                 <div className='d-flex align-items-center'>
                     <div className='burger-menu'>
-                        <a href='#' onClick={viewAside} className='mx-2 nav-link burger'>
+                        <a href='#' onClick={viewAside} className='mx-2 nav-link nav-header-link burger'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 23 18"><g><g><g><path className='burger__svg' fill="#303956" d="M1 2a1 1 0 0 1 0-2h21a1 1 0 0 1 0 2z"/></g><g><path className='burger__svg' fill="#303956" d="M1 10a1 1 0 0 1 0-2h21a1 1 0 0 1 0 2z"/></g><g><path className='burger__svg' fill="#303956" d="M1 18a1 1 0 0 1 0-2h21a1 1 0 0 1 0 2z"/></g></g></g></svg>
                         </a>
                     </div>
                     <div className='header-nav-menu'>
                         {/* <Router> */}
-                            <Link to='/' activeclassname='nav-link__active' className='mx-1 nav-link'>IT AKADEMIYA</Link> 
-                            <Link to='/tutor' activeclassname='nav-link__active' className='mx-1 nav-link'>ONLAYN REPETITOR</Link> 
-                            <Link to='/school' activeclassname='nav-link__active' className='mx-1 nav-link'>ONLAYN MAKTAB</Link> 
+                            <Link to='/' activeclassname='nav-link__active' className='mx-1 nav-link nav-header-link'>IT AKADEMIYA</Link> 
+                            <Link to='/tutor' activeclassname='nav-link__active' className='mx-1 nav-link nav-header-link'>ONLAYN REPETITOR</Link> 
+                            <Link to='/school' activeclassname='nav-link__active' className='mx-1 nav-link nav-header-link'>ONLAYN MAKTAB</Link> 
                         {/* </Router> */}
                     </div>
                 </div>
                 <div className='align-items-center header-nav-menu'>
                     <div className='my-2'>
-                        {/* <a href='/login' className='mx-2 nav-link avtoriz'>Avtorizatsiya</a> */}
-                        <Link to="/login" className='mx-2 nav-link avtoriz'>Avtorizatsiya</Link>
+                        <Link to="/login" className='mx-2 nav-link nav-header-link avtoriz'>Avtorizatsiya</Link>
                     </div>
                     <div className='my-2 text-right'>
                         <a href='#' className='mx-2'>
