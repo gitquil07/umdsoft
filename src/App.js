@@ -13,10 +13,15 @@ import { Home } from "./pages";
 import { Forum } from "./pages";
 import { Blog } from "./pages";
 import './style.css';
+
 import NodeJs from './pages/nodeJs/nodeJs'
 
-const modal = document.getElementById('modal');
 
+import Admin from "./pages/admin/admin";
+import AdminLogin from "./pages/admin/adminLogin/AdminLogin";
+import Online from './pages/online/Online'
+
+const modal = document.getElementById('modal');
 function App() {
 
   let [isOpen, setIsOpen] = useState(true);
@@ -35,11 +40,17 @@ function App() {
   }
 
   return (
+
     <Router>
       <Route path="/forgotPswd" component={ForgotPassword} /> 
       <Route path="/login" component={Login} /> 
       <Route path="/registration" component={Registration} />
 
+      <Route path='/admin' component={Admin}/>
+      <Route path='/charts-morris' component={Admin}/>
+      <Route path='/charts-apex' component={Admin}/>
+      <Route path='/charts-chartlist' component={Admin}/>
+      <Route path='/charts-chartjs' component={Admin}/>
       <Route path="/:page?" render={props => {
           let page = (!props.match.params.page)? "home" : props.match.params.page;
           
@@ -59,7 +70,9 @@ function App() {
           <Route path="/school" component={OnlineSchool} />
           <Route path="/profile" component={Profile} />
           <Route path="/forum" component={Forum} />
+          <Route path="/online" component={Online} />
           <Route path="/blog" component={Blog} />
+          <Route path="/nodejs" component={NodeJs} />
         </div>
       
       <Route path="/:page?" render={props => {
@@ -72,7 +85,7 @@ function App() {
           return "";
         }
       }}/>
-    </Router> 
+    </Router>
   );
 }
 

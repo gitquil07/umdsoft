@@ -1,0 +1,9 @@
+.bg-pattern{
+    background-image:url(../assets/images/bg-pattern.png);
+    background-size:cover;
+    background-position:center;
+    height: 100vh;
+}
+.bg-primary{
+    background-color:  #3051d3!important;
+}

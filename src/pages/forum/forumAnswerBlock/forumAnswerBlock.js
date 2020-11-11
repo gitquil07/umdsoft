@@ -1,4 +1,4 @@
-import React, {Component,useState} from 'react';
+import React, {useState} from 'react';
 import './forumAnswerBlock.css'
 import EditorTiny from "../../editorTiny/editorTiny";
 import ForumAnswer  from './forumAnswer/forumAnswer'

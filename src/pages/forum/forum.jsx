@@ -14,7 +14,7 @@ class Forum extends React.Component {
 
     render(){
         let {match: {url}} = this.props;
-        console.log(url);
+        
         return(
             <>
                 <div className='forum container d-flex justify-content-between'>

@@ -20,7 +20,7 @@
 .burger {
     padding: 4px 10px !important;
     padding-bottom: 8px !important;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
 }
 
@@ -32,20 +32,19 @@
     background-color: #303956;
 }
 
-.nav-link {
-    width: fit-content;
+.nav-header-link {
     font-size: 14px;
     font-weight: 700;
-    color:#BFBFBF !important;
+    color:#303956 !important;
 
 } 
  
-.nav-link:hover {
-    color: #303956 !important ;
+.nav-header-link:hover {
+    color: #02A4FE !important ;
 }
 
 .nav-link__active {
-    color: #303956 !important ;
+    color: #02A4FE !important ;
 }
 
 .avtoriz {
