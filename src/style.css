@@ -54,28 +54,87 @@ button:focus{
   padding: 0 !important;
 }
 
+.hideElem{
+  display:none !important;
+}
+
+.closeModal{
+  cursor:pointer;
+  display:flex;
+  flex-direction:row-reverse;
+}
+
+.closeModal-container{
+  position:relative;
+  width:50px;
+  height:50px;
+  padding:5px;
+  box-sizing:border-box;
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
+.closeModal-container:hover{
+  background-color:rgba(0, 0, 0, 0.8);
+}
+
+.crossLine{
+  width:80%;
+  height:3px;
+  background-color:#fff;
+  border-radius:5px;
+  transform-origin:center;
+  position:absolute;
+  top:calc(50% - 1.5px) ;
+  left:0;
+  right:0;
+  margin:0 auto;
+}
+
+.crossLine__right-to-bottom{
+  transform:rotate(45deg);
+}
+
+.crossLine__left-to-bottom{
+  transform:rotate(-45deg);
+}
+
 .modalReg{
-  background-image:url(../src/img/reg.jpg);
-  background-size:cover;
-  background-color:#4f56f5;
-  background-blend-mode:soft-light;
   height:100%;
   width:100%;
   position:absolute;
   top:0;
   left:0;
+}
+
+.modalReg__img-bg{
+  background-image:url(../src/img/reg.jpg);
+  background-size:cover;
+  background-color:#4f56f5;
+  background-blend-mode:soft-light;
+  overflow-y: scroll;
+}
+
+.modalReg__opacity-bg{
+  background:none;
+  background-color:rgba(0, 0, 0, 0.5);
+  z-index:3001;
+  overflow-y: scroll;
+}
+
+.centerElement{
+  width:100%;
+  height:100%;
   display:flex;
   justify-content: center;
-  align-items:center;
 }
 
 .regWrapper{
   width:370px;
-  margin:1px auto 0 auto;
   line-height:100%;
   background-color:#fff;
   border:1px solid rgba(0, 0, 0, 0.08);
   border-radius:10px;
+  margin:auto 0;
 }
 
 .profile-buttons{
@@ -161,6 +220,7 @@ button:focus{
   margin-bottom:15px;
   display:flex;
   align-items:center;
+  text-align:left !important;
 }
 
 .inputs input{
@@ -264,6 +324,7 @@ button:focus{
 
 .fa-eye__grey{
   color:#CACACA;
+  margin-right:5px;
 }
 
 .fa-eye__grey:hover{
@@ -588,32 +649,6 @@ button:focus{
     }
 }
 
-@media(min-width:768px) and (max-width:1024px){
-/* 
-  .modalReg{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-  } */
-
-  /* .regWrapper{
-    width:50%;
-  } */
-
-  /* .formHeader,
-  .formFooter{
-    height:80px;
-    line-height:80px;
-  }
-
-  .inputs,
-  .subBtn{
-    height:55px;
-  } */
-
-  
-}
-
 @media (max-width: 730px) {
   .tasks {
     flex-wrap: wrap;
@@ -699,6 +734,10 @@ button:focus{
   }
   /* ONLAY REPETITOR */
   
+  ::-webkit-input-placeholder{
+    text-align:left !important;
+    /* color:red !important; */
+  }
     
 }
 
@@ -723,7 +762,7 @@ button:focus{
   }
 
   .regWrapper{
-    margin-top:40px;
+    /* margin-top:40px; */
     width:100%;
     border:none;
   }

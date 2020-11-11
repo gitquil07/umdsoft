@@ -1,4 +1,5 @@
-import React, {useEffect} from 'react';
+import React, {useState} from 'react';
+import ReactDom from "react-dom";
 import {BrowserRouter as Router, Switch, Route, useParams} from "react-router-dom";
 
 import { Menu, HeaderProfile, Header, Footer } from "./component";
@@ -13,9 +14,13 @@ import { Forum } from "./pages";
 import { Blog } from "./pages";
 import './style.css';
 import NodeJs from './pages/nodeJs/nodeJs'
+
+const modal = document.getElementById('modal');
+
 function App() {
 
-  let [isOpen, setIsOpen] = React.useState(true);
+  let [isOpen, setIsOpen] = useState(true);
+  
 
   const isDisplay = (path) => {
     if(path != 'forgotPswd' && path != 'login' && path != 'registration'){
@@ -28,7 +33,6 @@ function App() {
   const viewAside = () => {
     setIsOpen(!isOpen);
   }
-  
 
   return (
     <Router>
@@ -40,10 +44,9 @@ function App() {
           let page = (!props.match.params.page)? "home" : props.match.params.page;
           
           if(isDisplay(page)){
-            console.log(isOpen);
             return <>
               <Menu isOpen={isOpen} />
-              {(page !== "/profile")? <Header viewAside={viewAside} /> :  <HeaderProfile viewAside={viewAside} />}
+              {(page !== "/profile")? <Header viewAside={viewAside}/> :  <HeaderProfile viewAside={viewAside} />}
             </>
           }else{
             return "";

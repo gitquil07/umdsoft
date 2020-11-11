@@ -1,9 +1,41 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from 'react-bootstrap';
 import { Link } from "react-router-dom";
+import { Modal } from "../../component";
+import { Login } from  "../../pages";
 import "./header.css";
 
-const Header = ({viewAside}) => {
+const modal = document.getElementById('modal');
+
+const Header = ({viewAside, showModal}) => {
+
+    let [toggleModal, setToggleModal] = useState(false);
+    let [scrolledPos, setScrolledPos] = useState(0);
+
+
+    useEffect(() => {
+        if(toggleModal){
+            document.body.style.overflowY = "hidden";
+
+            let closeBtn = document.querySelector('.closeModal');
+            closeBtn.addEventListener("click", function(){
+                setToggleModal(!toggleModal);
+                document.documentElement.scrollTo(0, scrolledPos); 
+            });
+
+        
+
+        }else{ 
+            document.body.style.overflowY = "scroll";
+        }
+    }, [toggleModal, scrolledPos]);
+
+    const openModal = () => {
+        setScrolledPos(document.documentElement.scrollTop);
+        document.documentElement.scrollTo(0, 0);
+        setToggleModal(!toggleModal);
+    }
+
     return(
         <div id='main' className='main'>
             {/* HEADER */}
@@ -25,7 +57,7 @@ const Header = ({viewAside}) => {
                 <div className='align-items-center header-nav-menu'>
                     <div className='my-2'>
                         {/* <a href='/login' className='mx-2 nav-link avtoriz'>Avtorizatsiya</a> */}
-                        <Link to="/login" className='mx-2 nav-link avtoriz'>Avtorizatsiya</Link>
+                        <button onClick={openModal} className='mx-2 nav-link avtoriz'>Avtorizatsiya</button>
                     </div>
                     <div className='my-2 text-right'>
                         <a href='#' className='mx-2'>
@@ -40,6 +72,9 @@ const Header = ({viewAside}) => {
                   nothingn there
             </div>
 
+            <Modal container={modal}>
+                <Login state={toggleModal} />
+            </Modal>
         </div>
     );
 }

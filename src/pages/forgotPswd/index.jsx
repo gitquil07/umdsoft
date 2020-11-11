@@ -38,39 +38,42 @@ const ForgotPswd = () => {
   }
 
   return(
-    <div className="modalReg">
-      <div className="regWrapper">
-        <h1 className="formHeader">Parolni tiklash</h1>
-        <div className="regForm">
-          <div className="message">
-            Ro'yxatdan o'tgan telefon raqamingizni kiriting.
-  Aktivlashtirish kodi sizga yuboriladi.
-            <span className="close" onClick={close}>x</span>
-          </div>
-          <form onSubmit={handleSubmit} className="form">
-            <label htmlFor="">Telefon</label>
-            <div className="inputs">
-            <span className="inputIcon"></span>
-              <input
-                  id="phoneNumber"
-                  type="text"
-                  name="phoneNumber"
-                  onChange={e => setPhoneNumber(e.target.value)}
-                  value={phoneNumber}
-                  placeholder="+998" />
-            </div>
-            <p>
-            Parolingizni qanday tiklash haqida sizga elektron pochta 
-  xabarini yuboramiz.
-            </p>
-            <button type="submit" className="subBtn">Qo'llanmani jo'natish</button>
-          </form>
+    <div className="modalReg modalReg__img-bg">
+      <div className="centerElement">
 
+        <div className="regWrapper">
+          <h1 className="formHeader">Parolni tiklash</h1>
+          <div className="regForm">
+            <div className="message">
+              Ro'yxatdan o'tgan telefon raqamingizni kiriting.
+    Aktivlashtirish kodi sizga yuboriladi.
+              <span className="close" onClick={close}>x</span>
+            </div>
+            <form onSubmit={handleSubmit} className="form">
+              <label htmlFor="">Telefon</label>
+              <div className="inputs">
+              <span className="inputIcon"></span>
+                <input
+                    id="phoneNumber"
+                    type="text"
+                    name="phoneNumber"
+                    onChange={e => setPhoneNumber(e.target.value)}
+                    value={phoneNumber}
+                    placeholder="+998" />
+              </div>
+              <p>
+              Parolingizni qanday tiklash haqida sizga elektron pochta 
+    xabarini yuboramiz.
+              </p>
+              <button type="submit" className="subBtn">Qo'llanmani jo'natish</button>
+            </form>
+
+          </div>
+          <p className="formFooter">
+            Parolni unutingizmi?&nbsp;
+            <Link to="/registration">Kirish</Link>
+          </p>
         </div>
-        <p className="formFooter">
-          Parolni unutingizmi?&nbsp;
-          <Link to="/registration">Kirish</Link>
-        </p>
       </div>
     </div>
   );

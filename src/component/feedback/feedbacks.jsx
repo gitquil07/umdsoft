@@ -103,8 +103,8 @@ bilimlari bilan maqtanib kelmoqda</p>
                   way possible.
               </div>
             </div>
-            <span className="next-feedback" onClick={next}></span>
           </div>
+          <span className="next-feedback" onClick={next}></span>
           <div className="feedback-rates">
             <div className="students-rate">
               <img src={avatar} className="student-avatar" alt="user"/>

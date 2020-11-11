@@ -6,3 +6,4 @@ export { default as HeaderProfile } from './header_profile/header_profile';
 export { default as Header } from './header/header';
 export { default as MyCourses } from './myCourses/myCourses';
 export { default as PanelElement } from "./panelElement/panelElement";
+export { default as Modal } from "./modal/modal";
